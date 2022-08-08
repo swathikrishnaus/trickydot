@@ -1,0 +1,162 @@
+.footer{
+    background-color: red;
+  }
+  
+  .footer{
+    margin-top: 200px;
+    background: #2c2a2e;
+  }
+  .footercontents{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .footercontents img{
+    margin-left: -25px;
+  }
+  .shopping-cart-container {
+    display: flex;
+  }
+  
+  .shopping-cart-container .shopping-cart-icon {
+    padding: 0px;
+    font-size: 30px;
+    color: white;
+    opacity: .8;
+  }
+  .shopping-cart-container .shopping-cart-iconmail {
+    padding: 0px;
+    font-size: 18px;
+    color: white;
+    opacity: .8;
+   margin-top: 10px;
+  }
+  .shopping-cart-container .shopping-cart-iconphone{
+    padding: 0px;
+    font-size: 25px;
+    color: white;
+    opacity: .8;
+  }
+  .shopping-cart-container .shopping-cart-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    color: white;
+    opacity: .8;
+  }
+  
+  .shopping-cart-container .shopping-cart-section .shopping-cart-name {
+    padding: 0px;
+    flex-grow: 1;
+  }
+  
+  .shopping-cart-container .shopping-cart-section .shopping-cart-price {
+    padding: 0px;
+    flex-grow: 1;
+  }
+  
+  .mail{
+    margin-top: 10px;
+  }
+  .phone{
+    margin-top: 10px;
+  }
+  .QuickLinks{
+    margin-top: 30px;
+  }
+  .QuickLinks h3{
+    color: white;
+    margin-top: 45px;
+  }
+  .QuickLinks p{
+    color: white;
+    opacity: .8;
+    margin-top: 20px;
+  }
+  
+  .followicons p{
+    color: white;
+  }
+  .followicons h3{
+    color: white;
+    margin-top: 45px;
+  }
+  
+  .footerwords{
+    color: #ffffff;
+    opacity: .8;
+    text-align: left;
+    padding-top: 16px;
+    
+  }
+  .footercontact h3{
+    color: white;
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* --------------------social media icons-------------------------- */
+  .demopadding {
+    margin-top: 20px;
+    width:200px;
+    text-align:center;
+  }
+  .icon {
+      position:relative;
+      text-align:center;
+      width:0px;
+      height:0px;
+      padding:20px;
+      border-top-right-radius: 	20px;
+      border-top-left-radius: 	20px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 	20px; 
+      color:#FFFFFF;
+  }
+  .icon i {
+      font-size:20px;
+      position:absolute;
+      left:9px;
+      top:10px;
+  }
+  .icon.social {
+      float:left;
+      margin:0 5px 0 0;
+      cursor:pointer;
+      background:#f0f0f1 ;
+      color:#262626;
+    opacity: .8;
+      transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s; 	
+  }
+  .icon.social:hover {
+      background:#262626 ;
+      color:#f0f0f1;
+      transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      -webkit-filter:	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+      -moz-filter: 	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+      -ms-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+      -o-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+      filter: 			drop-shadow(0 1px 10px rgba(0,0,0,.8));	 	
+  }
+  .icon.social.fb i {
+      left:13px;
+      top:10px;
+  }
+  .icon.social.inst i {
+      left:11px;
+  }
+  .icon.social.in i {
+      left:11px;
+  }
+  .icon.social.you i {
+      left:11px;
+  }
+  
