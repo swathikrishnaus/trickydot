@@ -101,6 +101,10 @@ a{
 	line-height: 1;
   
 }
+.header .logo img{
+ height: 54px;
+ width: auto;
+}
 .header .menu > ul > li .sub-menu > ul > li > a{
 	display: inline-block;
 	padding: 10px 0;
@@ -399,7 +403,52 @@ a{
 	}
 }
 
- 
+button {
+  /* font-size: 2em; */
+  background: #7D1128;
+  color: #fff;
+  border: 0.2rem solid #7D1128;
+  padding: 10px 20px;
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+button:hover {
+  color: #7D1128;
+}
+button::after {
+  content: "";
+  background: #ffffff;
+  position: absolute;
+  z-index: -1;
+  padding: 10px 20px;
+  display: block;
+}
+button[class^="slide"]::after {
+  transition: all 0.35s;
+}
+button[class^="slide"]:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.35s;
+}
+button.slide_from_left::after {
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+}
+ .megamenu-img .megamenu-img img{
+  width: 250PX;
+  height: auto;
+ }
+
+
+
+
 /* ----------------------css for navbar end------------------------------ */
 
 
@@ -426,10 +475,8 @@ a{
     font-size: 18px;
 }
 .home img{
-    width:600px;
     height: auto;
     /* margin-left: 100px; */
-    margin-top: 100px;
 }
 .home .btn{
     color: white;
