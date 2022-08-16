@@ -1,690 +1,587 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>trickyDot</title>
-    <link rel="stylesheet" href="css/Style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/title-image.jpg">
   </head>
-<body>
-  <!-- header start -->
- <header class="header">
-  <div class="container">
-    <div class="row v-center">
-      <div class="header-item item-left">
-        <div class="logo">
-          <a href="#"><img src="images/navlogo.png" alt=""></a>
-        </div>
-      </div>
-      <!-- menu start here -->
-      <div class="header-item item-center">
-        <div class="menu-overlay">
-        </div>
-        <nav class="menu">
-          <div class="mobile-menu-head">
-            <div class="go-back"><i class="fa fa-angle-left"></i></div>
-            <div class="current-menu-title"></div>
-            <div class="mobile-menu-close">&times;</div>
-          </div>
-          <ul class="menu-main">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About us</a>
-            </li>
-            <!-- <li>
-              <a href="#">Services</a>
-            </li> -->
-            <li class="menu-item-has-children">
-              <a href="#">Services <i class="fa fa-angle-down"></i></a>
-              <div class="sub-menu mega-menu mega-menu-column-4">
-                              <div class="list-item">
-                                  <h4 class="title">Web development</h4>
-                                  <ul>
-                                     <li><a href="#">Website development</a></li>
-                                     <li><a href="#">Web app development</a></li>
-                                     <li><a href="#">Ecommerce development</a></li>
-                                     <li><a href="#">CMS development</a></li>
-                                     <li><a href="#">Product List</a></li>
-                                  </ul>
-                              </div>
-                              
-                              <div class="list-item megamenu-img">
-                                 <img src="images/home/front-view-workspace-with-lamp-computer-screen.jpg" alt="shop">
-                              </div>
-                              <div class="list-item">
-                                <a href="#" class="nav-services"><h4 class="title">ERP Software development</h4></a>
-                                  <a href="#" class="nav-services"><h4 class="title">Artificial Intelligence development</h4></a>
-                                    <a href="#" class="nav-services"><h4 class="title">Digital marketing</h4></a>
-                                    <a href="#" class="nav-services"><h4 class="title">Software development</h4></a>
-                              </div>
-                              <div class="list-item megamenu-img">
-                                <img src="images/home/laptop-pencils-arrangement.jpg" alt="shop">
-                             </div>
-              </div>
-            </li>
-            <li class="menu-item-has-children">
-              <a href="#">Blog <i class="fa fa-angle-down"></i></a>
-              <div class="sub-menu single-column-menu">
-                <ul>
-                  <li><a href="#">Standard Layout</a></li>
-                  <li><a href="#">Grid Layout</a></li>
-                  <li><a href="#">single Post Layout</a></li>
+  <body>
+   
+    
+    <!-- --------------------------navbar start------------------------------ -->
+
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/trickydot-logo.PNG" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <!-- <ul class="navbar-nav">
+                    <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"> Services </a></li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Mega menu  </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            This is content of megamenu. <br>
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </div> 
+                    </li>
+                </ul> -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Services  </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <!-- This is content of megamenu. <br>
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. -->
+                            <div class="megamenu-contents">
+                                <div class="row">
+                                    <div class="col-lg-4"><h4>hhh</h4></div>
+                                    <div class="col-lg-4"><h4>hhh</h4></div>
+                                    <div class="col-lg-4"><h4>hhh</h4></div>
+                                </div>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"> Contact </a></li>                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Dropdown right </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                          <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                        </ul>
+                    </li> -->
+                        <button class="btn quote-btn">Get a Quote</button>
                 </ul>
-              </div>
-            </li>
-            <li class="menu-item-has-children">
-              <a href="#">Pages <i class="fa fa-angle-down"></i></a>
-              <div class="sub-menu single-column-menu">
-                <ul>
-                  <li><a href="#">Login</a></li>
-                  <li><a href="#">Register</a></li>
-                  <li><a href="#">Faq</a></li>
-                  <li><a href="#">404 Page</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
+            </div> <!-- navbar-collapse.// -->
+        </div> <!-- container-fluid.// -->
         </nav>
-      </div>
-      <!-- menu end here -->
-      <div class="header-item item-right">
-        <button type="button" class="slide_from_left " data-bs-toggle="modal" data-bs-target="#staticBackdrop">Get a quote</button>
-        <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        Modal body..
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="mb-3">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-      </div>
-    </div>
-  </div>
-</div>
-        <!-- mobile menu trigger -->
-        <div class="mobile-menu-trigger">
-          <span></span>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-
-
-<!-- --------------------------home section start--------------------------- -->
-
-<section class="home" id="home">
-  <div class="container">
-      <!-- <div class="homecontents"> -->
-        <div class="row">
-          <div class="col-lg-6 words">
-            <h1> <b>Ready to go for an <br> Upturn in this</b>  <br><b class="second">World of New?</b></h1>
-                  <p>We look for the upturn in this World of new <br> and we go for the excellence.</p>
-                  <button class="slide_from_left"><span>Get Started</span></button>
-          </div>
-          <div class="col-lg-6">
-            <img src="images/home.png" alt="" class="img-fluid">
-          </div>
-      </div>
-      <!-- </div> -->
-  </div>
-</section>
-
-<!-- --------------------------home section end--------------------------- -->
-
-
-
-
-
-<!-- --------------------------About section start--------------------------- -->
-
-<section class="about" id="about">
-  <div class="container">
-    <h5>ABOUT</h5>
-    <h2>WHO <b class="about-head">WE ARE?</b></h2>
-    <div class="row">
-      <div class="col-lg-8">
-        <img src="./images/about.svg" alt="" class="img-fluid">
-      </div>
-      
-      <div class="col-lg-4 about-words">
-        <p>We are software company establishes in 2020 to provide website development, software development, mobile application development(iOS & Android),
-          ERP software development(offline & cloud), AI developent, Digital Marketing and to provide the precise services.</span>
-        </p>
-        <a href="about.html"><button class="slide_from_left">Read more</button></a>
-      </div>
-
-      <!-- <div class="words">
-        <p class="text-center">Our success is satisfactory happiness of our clients!</p>
-      </div> -->
-    </div>
-  </div>
-</section>
-
-
-<!-- -----------------------------About section end-------------------------------------- -->
-
-<!-- -----------------------------core values section start-------------------------------------- -->
-<section class="core-values" id="core-values">
-  <div class="container">
-    <h5 class="core-head">OUR COMPANY</h5>
-    <h2>CORE <b class="values">VALUES</b> </h2>
-    <div class="text-center">
-      <img src="./images/core-values.gif"  alt="" class="img-fluid ">
-    </div>
     
-    
-      
-      <div class="core-list">
-          
-        <div class="row text-center">
-          <div class="col-lg-4">
-            <div class="contntbox">
-              <br><h5 class="fw-bolder headings">MISSION</h5>
-                <ul>
-                  <li>Pitch in with the enterprises and businesses to have efficient profficiency for them.</li>
-                  <li>We make outputs from effective solutions.</li>
-                  <li>To give the best output as services.</li>
-                </ul>
+    <!-- --------------------------navbar end------------------------------ -->
+
+
+
+
+    <!-- --------------------------------carousel start---------------------------- -->
+
+    <div class="home-carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-          </div>
-          
-          <div class="col-lg-4">
-            <div class="contntbox">
-             <br> <h5 class="fw-bolder headings">VISION</h5>
-              <ul>
-                <li>We seeks to have an environment where everyone <br> can go on with the benefits of advanced technologies.</li>
-                <li>To have the even satisfactory services for everyone <br> on technologies.</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="col-lg-4">
-            <div class="contntbox">
-            <br>  <h5 class="fw-bolder headings">WHY CHOOSE US?</h5>
-              <ul>
-                <li>We listen and then organise.</li>
-                <li>We follow proven ethical processes.</li>
-                <li>We focus on virtual output which has profit for you. <br> </li>
-                <li>We deliver on time & on budget.</li>
-              </ul>
-            </div>
-          </div>
-        
-        </div>
-      </div>  
-  </div>
-</section>
-
- <!-- -----------------------------core values section end-------------------------------------- -->
-
- <!-- -----------------------------services values section Start-------------------------------------- -->
-
- <section class="services" id="services">
-   <div class="container">
-     <h5 >WHAT WE OFFER</h5>
-     <h2>OUR <b class="our-services">SERVICES</b></h2>
-     <div class="services-contents">
-       <div class="row">
-         <div class="col-lg-4">
-          <div class="card webdevelopment">
-            <img src="./images/web-development.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bolder ">WEB DEVELOPMENT</h5>
-              <p class="card-text">Growing user expectations drives the revolution in technology and has made the brands to deliver advanced digital experiences <span id="dot">...</span><span id="mor">that are more important than ever for the brands as it is to be accesible everywhere in real time and on both desktop and other devices</span></p>
-              <button class="btn font-weight-bold" onclick="serviceFunction()" id="serviceBtn"><span>Read more</span><hr></button>
-              <!-- <a href="" onclick="serviceFunction()" id="serviceBtn"><span>Know more</span></a> -->
-            </div>
-          </div>
-         </div>
-
-         <div class="col-lg-4">
-          <div class="card webdevelopment">
-            <img src="./images/sw dvpmnt.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bolder ">SOFTWARE DEVELOPMENT</h5>
-              <p class="card-text">The software make life more comfortable.For example, computer software has made it easier than ever<span id="dot">...</span><span id="mor">before to find any information or products needed by browsing and communicate with people all over the world.</span></p>
-              <button class="btn font-weight-bold" onclick="serviceFunction()" id="serviceBtn"><span>Read more</span><hr></button>
-              <!-- <a href="" onclick="serviceFunction()" id="serviceBtn"><span>Know more</span></a> -->
-            </div>
-          </div>
-         </div>
-
-         <div class="col-lg-4">
-          <div class="card webdevelopment">
-            <img src="./images/digitallogo.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title fw-bolder ">DIGITAL MARKETING</h5>
-              <p class="card-text">Digital marketing is the component of marketing that uses the internet and online based digital technologies<span id="dot">...</span><span id="mor">such as desktop computers, mobile phones and other digital media and platforms to promote products and services.</span></p>
-              <button class="btn font-weight-bold" onclick="serviceFunction()" id="serviceBtn"><span>Read more</span><hr></button>
-              <!-- <a href="" onclick="serviceFunction()" id="serviceBtn"><span>Know more</span></a> -->
-            </div>
-          </div>
-         </div>
-
-       </div>
-
-       <div class="row mt-4 ">
-        <div class="col-lg-4">
-         <div class="card webdevelopment ">
-           <img src="./images/erpsw.png" class="card-img-top" alt="...">
-           <div class="card-body ">
-             <h5 class="card-title fw-bolder ">ERP SOFTWARE DEVELOPMENT(OFFLINE CLOUD)</h5>
-             <p class="card-text">Enterprise resourse planning (ERP) is the integrated management of main business process, often in real time and mediated<span id="dot">...</span><span id="mor"> by software and technology.</span></p>
-             <button class="btn font-weight-bold" onclick="serviceFunction()" id="serviceBtn"><span>Read more</span><hr></button>
-             <!-- <a href="" onclick="serviceFunction()" id="serviceBtn"><span>Know more</span></a> -->
-           </div>
-         </div>
-        </div>
-
-        <div class="col-lg-4">
-         <div class="card webdevelopment">
-           <img src="./images/ai.jpg" class="card-img-top" alt="...">
-           <div class="card-body">
-             <h5 class="card-title fw-bolder ">ARTIFICIAL INTELLIGENCE DEVELOPMENT</h5>
-             <p class="card-text">A technology is imporatant because it enables human capabilities - understanding, reasoning, <span id="dot">...</span><span id="mor">planning, communication and perception - to be undertaken by software increasingly effectively, efficiently and at low cost.</span></p>
-             <button class="btn font-weight-bold" onclick="serviceFunction()" id="serviceBtn"><span>Read more</span><hr></button>
-             <!-- <a href="" onclick="serviceFunction()" id="serviceBtn"><span>Know more</span></a> -->
-           </div>
-         </div>
-        </div>
-
-        <div class="col-lg-4">
-         <div class="card webdevelopment">
-           <img src="./images/mobile.png" class="card-img-top" alt="...">
-           <div class="card-body">
-             <h5 class="card-title fw-bolder ">MOBILE APPLICATION DEVELOPMENT</h5>
-             <p class="card-text">As we are a big part of the screen life,  services to mobile application development is as same as providing services to our <span id="dot">...</span><span id="mor">daily life. Here we provide the amenity to mobile application development foe both iOS and Android on extended areas.</span></p>
-             <button class="btn font-weight-bold" onclick="serviceFunction()" id="serviceBtn"><span>Read more</span><hr></button>
-             <!-- <a href="" onclick="serviceFunction()" id="serviceBtn"><span>Know more</span></a> -->
-           </div>
-         </div>
-        </div>
-
-      </div>
-
-
-     </div>
-   </div>
- </section>
- <!-- -----------------------------services values section end-------------------------------------- -->
-
-  <!-- -----------------------------client section start----------------------------------------->
-
-
-  <!-- -----------------------------client section end------------------------------------------->
-
-
- <section class="clients" id="clients">
-   <div class="container">
-    <h2>OUR <b class="our-clients">CLIENTS</b></h2>
-    <p>"The customer is why we are here. If we take good <br> care of them, they'll give us good reason to come <br> back"</p>
-    <div class="client-logos text-center">
-      <div class="clientlogos">
-        <div class="row">
-          <div class="col-lg-3 colu">
-            <img src="/images/clientlogos/1.PNG" alt="" class="bhabha">
-          </div>
-
-          <div class="col-lg-3 colu">
-            <img src="/images/clientlogos/2.PNG" alt="" class="nambiyath">
-          </div>
-
-          <div class="col-lg-3 ">
-            <img src="/images/clientlogos/3.PNG" alt="" class="aaloka">
-          </div>
-
-          <div class="col-lg-3 ">
-            <img src="/images/clientlogos/4.PNG" alt=""  class="bfix">
-          </div>
-        </div>
-
-
-        <div class="row mt-5">
-          <div class="col-lg-3">
-            <img src="/images/clientlogos/5.PNG" alt="" class="dentmaster">
-          </div>
-
-          <div class="col-lg-3 ">
-            <img src="/images/clientlogos/6.PNG" alt=""  class="dartc">
-          </div>
-
-          <div class="col-lg-3 ">
-            <img src="/images/clientlogos/7.PNG" alt="" class="torola">
-          </div>
-
-          <div class="col-lg-3 ">
-            <img src="/images/clientlogos/8.PNG" alt=""  class="insure">
-          </div>
-        </div>
-        
-      </div>
-    </div>
-   </div>
- </section>
- 
- <!-- -----------------------------customer section start-------------------------------------- -->
-<section class="customers">
-  <div class="container">
-    <h5>OTHER VALUABLE</h5>
-    <h2>CUSTOMERS</h2>
-    <div class="wrapper">
-      <div class="logos">
-        <div class="carousel owl-carousel">
-          <div class="logo logo1"><img src="./images/1_prev_ui.png" alt=""></div>
-          <div class="logo logo2"><img src="./images/2_prev_ui.png" alt=""></div>
-          <div class="logo logo3"><img src="./images/3_prev_ui.png" alt=""></div>
-          <div class="logo logo4"><img src="./images/logos/logo5.png" alt=""></div>
-          <div class="logo logo5"><img src="./images/logos/logo6.png" alt="" class="logosize"></div>
-          <div class="logo logo6"><img src="./images/logos/logo7.png" alt="" class="logosize"></div>
-          <div class="logo logo7"><img src="./images/logos/logo8.png" alt="" class="logosize"></div>
-          <div class="logo logo8"><img src="./images/logos/logo9.png" alt="" class="logosize"></div>
-          <div class="logo logo9"><img src="./images/logos/logo10.png" alt="" class="logosize"></div>
-          <div class="logo logo10"><img src="./images/logos/logo10.png" alt="" class="logosize"></div>
-          <div class="logo logo11"><img src="./images/logos/logo11.png" alt="" class="logosize"></div>
-          <div class="logo logo12"><img src="./images/logos/logo12.png" alt="" class="logosize"></div>
-          <div class="logo logo13"><img src="./images/logos/logo13.png" alt="" class="logosize"></div>
-          <div class="logo logo14"><img src="./images/logos/logo14.png" alt="" class="logosize"></div>
-          <div class="logo logo15"><img src="./images/logos/logo15.png" alt="" class="logosize"></div>
-          <div class="logo logo16"><img src="./images/logos/logo16.png" alt="" class="logosize"></div>
-          <div class="logo logo17"><img src="./images/logos/logo17.png" alt="" class="logosize"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- 
- 
- 
- <!-- -----------------------------customer section end-------------------------------------- -->
- 
- 
- <!-- -----------------------------contact section start-------------------------------------- -->
-<section class="contacts" id="contacts">
-  <div class="container">
-     <h2>CONTACT <b class="contacthead">US</b></h2>
-     <p>Do you have any questions? Feel free to contact us!</p>
-     <div class="row">
-
-       <div class="col-lg-6">
-        <form>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
-          </div>
-          <div class="mb-3">
-            <input type="email" class="form-control" id="exampleInputPassword1" placeholder="E-mail">
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control " id="exampleFormControlTextarea1" rows="4" placeholder="Message"></textarea>          
-          </div>
-          <div class="text-center">
-            <button type="submit text-center" class="btn">Send</button>
-          </div>
-        </form>
-       </div>  
-
-      <div class="col-lg-6">
-         <div class="officeaddress">
-          <img src="./images/contact.gif" alt="" class="img-fluid">
-            <!-- <div class="text-center">
-              <h5>Office Address</h5>
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;  prokash600@gmail.com
-            </div> -->
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-  <!-- -----------------------------contact section end-------------------------------------- -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  <!-- -----------------------------footer section start-------------------------------------- -->
-
-  <section class="footer">
-    <div class="d-flex flex-column h-100">
-      <!-- FOOTER -->
-      <footer class="w-100 py-4 flex-shrink-0">
-          <div class="container py-4">
-              <div class="row gy-4 gx-5">
-                  <div class="col-lg-4 col-md-6">
-                      <!-- <h5 class="h1 text-white">FB.</h5> -->
-                      <img src="/images/footerlogo.png" alt="">
-                      <!-- <p class="small text-muted">Our success is satisfactory happiness of our clients!</p> -->
-                      <!-- <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="#">Bootstrapious.com</a></p> -->
-                      <div class="shopping-cart-container">
-                        <div class="shopping-cart-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                          <div class="shopping-cart-section">
-                            <div class="shopping-cart-name small text-muted">Puthanathani</div>
-                            <div class="shopping-cart-price small text-muted">Malappuram-Kerala</div>
-                          </div>
-                      </div>
-      
-                <div class="mail">
-                  <div class="shopping-cart-container">
-                    <div class="shopping-cart-iconmail"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                      <div class="shopping-cart-section">
-                        <div class="shopping-cart-name small text-muted">Puthanathani</div>
-                        <div class="shopping-cart-price small text-muted">Malappuram-Kerala</div>
-                      </div>
-                  </div>
-                </div>
-      
-                <div class="phone">
-                  <div class="shopping-cart-container">
-                    <div class="shopping-cart-iconphone"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                      <div class="shopping-cart-section">
-                        <div class="shopping-cart-name small text-muted">9847505959</div>
-                        <div class="shopping-cart-price small text-muted">9847505969</div>
-                      </div>
-                  </div>
-                </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/carousel1.png" class="d-block" alt="...">
+                <div class="carousel-caption  d-md-block">
+                 <div class="row">
+                    <div class="col-lg-6">
+                        <!-- <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p> -->
                     </div>
-                  <div class="col-lg-2 col-md-6">
-                      <h5 class="text-white mb-3">Quick links</h5>
-                      <ul class="list-unstyled text-muted">
-                          <li class="small"><a href="#">About us</a></li>
-                          <li class="small"><a href="#">Products</a></li>
-                          <li class="small"><a href="#">Customers</a></li>
-                          <li class="small"><a href="#">Contact us</a></li>
-                      </ul>
-                  </div>
-                  <div class="col-lg-2 col-md-6">
-                      <h5 class="text-white mb-3">Services</h5>
-                      <ul class="list-unstyled text-muted ">
-                          <li class="small"><a href="#">Web development</a></li>
-                          <li class="small"><a href="#">Software development</a></li>
-                          <li class="small"><a href="#">Digital marketing</a></li>
-                          <li class="small"><a href="#">ERP software development</a></li>
-                          <li class="small"><a href="#">Artificial Intelligence development</a></li>
-                          <li class="small"><a href="#">Mobile Application development</a></li>
-                      </ul>
-                      
-
-                      <div class="footercontact">
-                        <h3>Contact</h3>
-                      <!-- <img src="/images/footerlogo.png" alt=""> -->
-                         
-                      </div>
-
-
-
-
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                      <h5 class="text-white mb-3">Follow us</h5>
-                      <p class="small text-muted">Our success is satisfactory happiness of our clients!</p>
-                      <div class='demopadding'>
-                        <a href="" class="icon social fb"><i class='fa fa-facebook'></i></a>
-                        <a href="https://instagram.com/trickydotofficial?igshid=YmMyMTA2M2Y=" class="icon social inst"><i class='fa fa-instagram'></i></a>
-                        <a href="https://www.linkedin.com/company/trickydot" class="icon social in"><i class='fa fa-linkedin'></i></a>
-                        <a href="" class="icon social you"><i class='fa fa-youtube-play'></i></a>
-                      </div> 
-                      <!-- <form action="#">
-                          <div class="input-group mb-3">
-                              <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                              <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
-                          </div>
-                      </form> -->
-                  </div>
+                    <div class="carousel-caption  d-md-block">
+                        <h1>Ready to go for an <br> Upturn in this <br> <b class="head-italic">World of New</b></h1>
+                        <p>Some representative placeholder content for the first slide.</p>
+                        <div class="text-right">
+                            <button class="btn quote-btn">Get a Quote</button>
+                        </div>
+                    </div>
+                 </div>
+                </div>
               </div>
+              <div class="carousel-item">
+                <img src="images/carousel1.png" class="d-block" alt="...">
+                <div class="carousel-caption  d-md-block">
+                    <h1>Ready to go for an <br> Upturn in this <br> <b class="head-italic">World of New</b></h1>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <div class="text-right">
+                        <button class="btn quote-btn">Get a Quote</button>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/carousel1.png" class="d-block" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h1>Ready to go for an <br> Upturn in this <br> <b class="head-italic">World of New</b></h1>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <div class="text-right">
+                        <button class="btn quote-btn">Get a Quote</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-      </footer>
-  </div>
-  
-  </section>
-
-
-
-  <!-- -----------------------------footer section end-------------------------------------- -->
-
-
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="mb-3">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-      </div>
     </div>
-  </div>
-</div>
+
+
+    <!-- --------------------------------carousel end---------------------------- -->
+
+
+
+    <!-- --------------------------------about start---------------------------- -->
+
+    
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>About <b class="subhead">Us</b></h2>
+                    <p class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus in ex. Praesent elementum metus vel suscipit tempus. Cras euismod ipsum ipsum, id congue tortor placerat non. Duis efficitur lectus vel vehicula aliquet. Proin lectus nibh, vehicula in cursus quis, euismod dignissim velit. </p>
+                    <button class="btn about-btn">Read more</button>
+                </div>
+                <div class="col-lg-6 about-img">
+                    <img src="images/about-img.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        
+        
+            <div class="map">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="images/map.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="experience">
+                                    <h5 class="text-center">2 Years</h5>
+                                    <p class="text-center">Of Experience</p>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="experience">
+                                    <h5 class="text-center">500+</h5>
+                                    <p class="text-center">Projects</p>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="experience">
+                                    <h5 class="text-center">500+</h5>
+                                    <p class="text-center">Clients</p>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="map-paragraph">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus in ex. Praesent elementum metus vel suscipit tempus. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------------about end---------------------------- -->
+
+
+
+
+    <!-- --------------------------------Services end---------------------------- -->
+
+
+    <section class="services">
+        <div class="container">
+            <h2>Our <b class="subhead">Services</b></h2>
+            <div class="service-details">
+                <p class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus in ex. Praesent elementum metus vel suscipit tempus. Cras euismod ipsum ipsum, id congue tortor placerat non. Duis efficitur lectus vel vehicula aliquet. Proin lectus nibh, vehicula in cursus quis, euismod dignissim velit. </p>
+            </div>
+            <!--<div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div> -->
+              <div class="service-cards">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <i class="fas fa-clock"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Web Development</h5>
+                                <p class="card-text">Growing user expectations drive the revolution in technology and has made the brands to deliver advanced digital experiences that are more important than ever for the brands as it is to be asccessible everywhere </p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Software Development</h5>
+                                <p class="card-text">The software help make life more comfortable. For example, computer software has made it easier than ever before to find any information or products needed by browsing and communicate with people.</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Mobile Application Development</h5>
+                                <p class="card-text">As we are a big part of the screen life, services to mobile application and mobile application development is as same as providing services to our daily life of this new world.</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mt-4">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">ERP Software Development</h5>
+                                <p class="card-text">Enterprise resource planning (ERP) is the integrated management of main business processes, often in real time and mediated by software and technology.</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Artificial Intelligence Development</h5>
+                                <p class="card-text">AI technology is important becaouse it enables human capabilities - understanding, reasoning, planning, communication and perception - to be undertaken by software </p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Digital Marketing</h5>
+                                <p class="card-text">Digital marketing is the component of marketing that uses the internet and online based digital technologies such as desktop computers, mobile phones and other digital media and plateforms</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+    <!-- --------------------------------Services end---------------------------- -->
+
+
+
+
+
+    <!-- --------------------------------Customers start---------------------------- -->
+
+    <section class="customers">
+        <div class="customer-background">
+            <div class="container">
+                <h2>Our <b class="subhead">Customers</b></h2>
+                <div class="customers-details">
+                    <p class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus in ex. Praesent elementum metus vel suscipit tempus. Cras euismod ipsum ipsum, id congue tortor placerat non. Duis efficitur lectus vel vehicula aliquet. Proin lectus nibh, vehicula in cursus quis, euismod dignissim velit. </p>
+                </div>
+                <!-- <div class="logo-carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+                          </div>
+                                  <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/LOGO1.PNG" alt="">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo2.PNG" alt="">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo3.PNG" alt="">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo4.PNG" alt="">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo5.PNG" alt="">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo6.PNG" alt="">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo7.PNG" alt="">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo00.PNG" alt="">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo8.PNG" alt="">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo9.PNG" alt="">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo10.PNG" alt="">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo11.PNG" alt="">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo12.PNG" alt="">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo13.PNG" alt="">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo14.PNG" alt="">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo15.PNG" alt="">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo16.PNG" alt="">
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="images/customer-logos/logo17.PNG" alt="">
+                                </div>
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-3"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div> -->
+
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/LOGO1.PNG" alt="">
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo2.PNG" alt="">
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo3.PNG" alt="">
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo4.PNG" alt="">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo5.PNG" alt="">
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo6.PNG" alt="">
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo7.PNG" alt="">
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo00.PNG" alt="">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo8.PNG" alt="">
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo9.PNG" alt="">
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo10.PNG" alt="">
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo11.PNG" alt="">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo12.PNG" alt="">
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo13.PNG" alt="">
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo14.PNG" alt="">
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo15.PNG" alt="">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo16.PNG" alt="">
+                        </div>
+                        <div class="col-lg-3">
+                            <img src="images/customer-logos/logo17.PNG" alt="">
+                        </div>
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+
+    <!-- --------------------------------Customers end---------------------------- -->
+
+
+
+
+    <!-- --------------------------------portfolio start---------------------------- -->
+
+
+    <section class="portfolio">
+        <div class="container">
+            <h2>Our <b class="subhead">Portfolio</b></h2>
+            <div class="portfolio-details">
+                <p class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus in ex. Praesent elementum metus vel suscipit tempus. Cras euismod ipsum ipsum, id congue tortor placerat non. Duis efficitur lectus vel vehicula aliquet. Proin lectus nibh, vehicula in cursus quis, euismod dignissim velit. </p>
+            </div>
+
+            <div class="portfolio-gallery">
+                
+                
+                
+                
+                
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+    <!-- --------------------------------portfolio end---------------------------- -->
 
 
 
 
 
 
+    <!-- --------------------------------contact start---------------------------- -->
+
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact <b class="subhead">Us</b></h2>
+            <div class="contact-details">
+                <p class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus in ex. Praesent elementum metus vel suscipit tempus. Cras euismod ipsum ipsum, id congue tortor placerat non.  </p>
+            </div>
+
+            <div class="form-contents">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="mb-3">
+                                <input type="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Enter your name">
+                              </div>
+                            <div class="mb-3">
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-3">
+                                <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="emailHelp" placeholder="Phone number">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type your message"></textarea>
+                            </div>
+                            <div class="choose-files">
+                                <input type="file" />
+                            </div>
+                            <button type="submit" class="btn">Send to us</button>
+                          </form>
+                    </div>
+                    <div class="col-lg-6 contact-img">
+                        <img src="images/contact.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------------------------contact end---------------------------- -->
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-  
- 
 
 
     <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script></body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+   
+  </body>
 </html>
