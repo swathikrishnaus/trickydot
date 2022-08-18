@@ -8,8 +8,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css" integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="images/title-image.jpg">
   </head>
   <body>
@@ -17,11 +18,13 @@
     
     <!-- --------------------------navbar start------------------------------ -->
 
-    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <nav class="navbar navbar-expand-sm bg-white fixed-top py-2">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="images/trickydot-logo.PNG" alt="" srcset=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
             </button>
             <div class="collapse navbar-collapse" id="main_nav">
                 <!-- <ul class="navbar-nav">
@@ -52,13 +55,44 @@
                             consequat. -->
                             <div class="megamenu-contents">
                                 <div class="row">
-                                    <div class="col-lg-4"><h4>hhh</h4></div>
-                                    <div class="col-lg-4"><h4>hhh</h4></div>
-                                    <div class="col-lg-4"><h4>hhh</h4></div>
+                                    <div class="col-lg-3 service-navlinks">
+                                        <h6>Web App Development</h6>
+                                        <a href="">Static Website</a><br>
+                                        <a href="">CMS Website</a><br>
+                                        <a href="">Responsive Website</a><br><br>
+                                        <h6>E Commerce Development</h6>
+                                        <a href="">Opencart Development</a><br>
+                                        <a href="">Magento Development</a><br>
+                                        <a href="">Woocommerce Development</a><br>
+                                        <a href="">Custom eCommerce Development</a>
+                                    </div>
+                                    <div class="col-lg-3 service-navlinks">
+                                        <h6>Mobile App Development</h6>
+                                        <a href="">Android App Development</a><br>
+                                        <a href="">iOS App Development</a><br>
+                                        <a href="">Flutter App development</a><br><br>
+                                        <h6>Software Development</h6>
+                                        <a href="">Billing Software(Product)</a><br>
+                                        <a href="">Clinical Management Software(Product)</a>
+                                    </div>
+                                    <div class="col-lg-3 service-navlinks">
+                                        <h6>Custom Software</h6>
+                                        <a href="">SEO</a><br>
+                                        <a href="">SMM</a><br>
+                                        <a href="">SEM</a><br><br>
+                                        <h6>Advertising</h6>
+                                        <a href="">Branding</a><br>
+                                        <a href="">Video Advertising</a><br>
+                                        <a href="">Ad Film</a>
+                                    </div>
+                                    <div class="col-lg-3 ">
+                                        <div class="megamenu-img"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div> 
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="#"> Hire a Developer </a></li> 
                     <li class="nav-item"><a class="nav-link" href="#"> Contact </a></li>                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Dropdown right </a>
                         <ul class="dropdown-menu dropdown-menu-end">
@@ -92,11 +126,9 @@
                 <div class="carousel-caption  d-md-block">
                  <div class="row">
                     <div class="col-lg-6">
-                        <!-- <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p> -->
                     </div>
                     <div class="carousel-caption  d-md-block">
-                        <h1>Ready to go for an <br> Upturn in this <br> <b class="head-italic">World of New</b></h1>
+                        <h3>Ready to go for an <br> Upturn in this <br> <b class="head-italic">World of New</b></h3>
                         <p>Some representative placeholder content for the first slide.</p>
                         <div class="text-right">
                             <button class="btn quote-btn">Get a Quote</button>
@@ -108,7 +140,7 @@
               <div class="carousel-item">
                 <img src="images/carousel1.png" class="d-block" alt="...">
                 <div class="carousel-caption  d-md-block">
-                    <h1>Ready to go for an <br> Upturn in this <br> <b class="head-italic">World of New</b></h1>
+                    <h3>Ready to go for an <br> Upturn in this <br> <b class="head-italic">World of New</b></h3>
                     <p>Some representative placeholder content for the first slide.</p>
                     <div class="text-right">
                         <button class="btn quote-btn">Get a Quote</button>
@@ -118,7 +150,7 @@
               <div class="carousel-item">
                 <img src="images/carousel1.png" class="d-block" alt="...">
                 <div class="carousel-caption d-md-block">
-                    <h1>Ready to go for an <br> Upturn in this <br> <b class="head-italic">World of New</b></h1>
+                    <h3>Ready to go for an <br> Upturn in this <br> <b class="head-italic">World of New</b></h3>
                     <p>Some representative placeholder content for the first slide.</p>
                     <div class="text-right">
                         <button class="btn quote-btn">Get a Quote</button>
@@ -140,7 +172,7 @@
 
     <!-- --------------------------------carousel end---------------------------- -->
 
-
+    
 
     <!-- --------------------------------about start---------------------------- -->
 
@@ -154,7 +186,7 @@
                     <button class="btn about-btn">Read more</button>
                 </div>
                 <div class="col-lg-6 about-img">
-                    <img src="images/about-img.png" alt="" class="img-fluid">
+                    <img src="images/about-img.png" alt="" class="img-fluid vert-move">
                 </div>
             </div>
         
@@ -167,7 +199,7 @@
                     <div class="col-lg-4">
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="experience">
+                                <div class=" bg-change">
                                     <h5 class="text-center">2 Years</h5>
                                     <p class="text-center">Of Experience</p>
                                  </div>
@@ -224,9 +256,9 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="card">
-                            <i class="fas fa-clock"></i>
+                            <img src="images/services/web-development.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Web Development</h5>
+                                <h6 class="card-title">Web Development</h6>
                                 <p class="card-text">Growing user expectations drive the revolution in technology and has made the brands to deliver advanced digital experiences that are more important than ever for the brands as it is to be asccessible everywhere </p>
                                 <a href="#">Read more</a>
                             </div>
@@ -234,8 +266,9 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="card">
+                            <img src="images/services/software-development.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Software Development</h5>
+                                <h6 class="card-title">Software Development</h6>
                                 <p class="card-text">The software help make life more comfortable. For example, computer software has made it easier than ever before to find any information or products needed by browsing and communicate with people.</p>
                                 <a href="#">Read more</a>
                             </div>
@@ -243,8 +276,9 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="card">
+                            <img src="images/services/app-development.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Mobile Application Development</h5>
+                                <h6 class="card-title">Mobile Application Development</h6>
                                 <p class="card-text">As we are a big part of the screen life, services to mobile application and mobile application development is as same as providing services to our daily life of this new world.</p>
                                 <a href="#">Read more</a>
                             </div>
@@ -256,8 +290,9 @@
                 <div class="row mt-4">
                     <div class="col-lg-4">
                         <div class="card">
+                            <img src="images/services/ERP.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">ERP Software Development</h5>
+                                <h6 class="card-title">ERP Software Development</h6>
                                 <p class="card-text">Enterprise resource planning (ERP) is the integrated management of main business processes, often in real time and mediated by software and technology.</p>
                                 <a href="#">Read more</a>
                             </div>
@@ -265,8 +300,9 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="card">
+                            <img src="images/services/AI.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Artificial Intelligence Development</h5>
+                                <h6 class="card-title">Artificial Intelligence Development</h6>
                                 <p class="card-text">AI technology is important becaouse it enables human capabilities - understanding, reasoning, planning, communication and perception - to be undertaken by software </p>
                                 <a href="#">Read more</a>
                             </div>
@@ -274,8 +310,9 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="card">
+                            <img src="images/services/digital-marketing.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Digital Marketing</h5>
+                                <h6 class="card-title">Digital Marketing</h6>
                                 <p class="card-text">Digital marketing is the component of marketing that uses the internet and online based digital technologies such as desktop computers, mobile phones and other digital media and plateforms</p>
                                 <a href="#">Read more</a>
                             </div>
@@ -302,193 +339,95 @@
                 <div class="customers-details">
                     <p class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus in ex. Praesent elementum metus vel suscipit tempus. Cras euismod ipsum ipsum, id congue tortor placerat non. Duis efficitur lectus vel vehicula aliquet. Proin lectus nibh, vehicula in cursus quis, euismod dignissim velit. </p>
                 </div>
-                <!-- <div class="logo-carousel">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-
-                          </div>
-                                  <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/LOGO1.PNG" alt="">
-                                </div>
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo2.PNG" alt="">
-                                </div>
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo3.PNG" alt="">
-                                </div>
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo4.PNG" alt="">
-                                </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo5.PNG" alt="">
-                                </div>
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo6.PNG" alt="">
-                                </div>
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo7.PNG" alt="">
-                                </div>
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo00.PNG" alt="">
-                                </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo8.PNG" alt="">
-                                </div>
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo9.PNG" alt="">
-                                </div>
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo10.PNG" alt="">
-                                </div>
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo11.PNG" alt="">
-                                </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo12.PNG" alt="">
-                                </div>
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo13.PNG" alt="">
-                                </div>
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo14.PNG" alt="">
-                                </div>
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo15.PNG" alt="">
-                                </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo16.PNG" alt="">
-                                </div>
-                                <div class="col-lg-3">
-                                    <img src="images/customer-logos/logo17.PNG" alt="">
-                                </div>
-                                <div class="col-lg-3"></div>
-                                <div class="col-lg-3"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-            </div> -->
-
-
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/LOGO1.PNG" alt="">
-                        </div>
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo2.PNG" alt="">
-                        </div>
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo3.PNG" alt="">
-                        </div>
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo4.PNG" alt="">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo5.PNG" alt="">
-                        </div>
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo6.PNG" alt="">
-                        </div>
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo7.PNG" alt="">
-                        </div>
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo00.PNG" alt="">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/LOGO1.PNG" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo2.PNG" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo3.PNG" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo4.PNG" alt="">
+                            </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo8.PNG" alt="">
-                        </div>
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo9.PNG" alt="">
-                        </div>
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo10.PNG" alt="">
-                        </div>
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo11.PNG" alt="">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo12.PNG" alt="">
-                        </div>
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo13.PNG" alt="">
-                        </div>
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo14.PNG" alt="">
-                        </div>
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo15.PNG" alt="">
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo5.PNG" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo6.PNG" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo7.PNG" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo00.PNG" alt="">
+                            </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo16.PNG" alt="">
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo8.PNG" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo9.PNG" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo10.PNG" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo11.PNG" alt="">
+                            </div>
                         </div>
-                        <div class="col-lg-3">
-                            <img src="images/customer-logos/logo17.PNG" alt="">
-                        </div>
-                        <div class="col-lg-3"></div>
-                        <div class="col-lg-3"></div>
                     </div>
-                  </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo12.PNG" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo13.PNG" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo14.PNG" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo15.PNG" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo16.PNG" alt="">
+                            </div>
+                            <div class="col-lg-3">
+                                <img src="images/customer-logos/logo17.PNG" alt="">
+                            </div>
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-3"></div>
+                        </div>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
+            
+            </div>
         </div>
     </section>
 
@@ -536,12 +475,12 @@
         <div class="container">
             <h2>Contact <b class="subhead">Us</b></h2>
             <div class="contact-details">
-                <p class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus in ex. Praesent elementum metus vel suscipit tempus. Cras euismod ipsum ipsum, id congue tortor placerat non.  </p>
+                <p class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus in ex. Praesent elementum metus vel suscipit tempus. </p>
             </div>
 
             <div class="form-contents">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 order-1 order-md-0">
                         <form>
                             <div class="mb-3">
                                 <input type="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Enter your name">
@@ -561,8 +500,44 @@
                             <button type="submit" class="btn">Send to us</button>
                           </form>
                     </div>
-                    <div class="col-lg-6 contact-img">
-                        <img src="images/contact.png" alt="" class="img-fluid">
+                    <div class="col-lg-6 contact-img order-0 order-md-1">
+                        <img src="images/contact.png" alt="" class="img-fluid vert-move">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="address-deatils">
+                <div class="row">
+                    <div class="col-lg-4 ">
+                        <div class="office-address">
+                            <div class="address-contents ">
+                                <h5>Office address</h5>
+                                <p>Puthanathani, <br>Malappuram,<br>Kerala - 676510</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="office-address">
+                            <div class="address-contents ">
+                                <h5>Contact us</h5>
+                                <p>www.trickydot.com  <br>9847505959<br>9847505969</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="follow-us">
+                            <div class="address-contents ">
+                                <h5>Follow us</h5>
+                                <div class="d-flex followus-icons">
+                                    <a href=""><img src="images/icons/facebook.png" alt=""></a>
+                                    <a href=""><img src="images/icons/instagram.png" alt=""></a>
+                                    <a href=""><img src="images/icons/twitter.png" alt=""></a>
+                                    <a href=""><img src="images/icons/youtube.png" alt=""></a>
+                                    <a href=""><img src="images/icons/behance.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -573,6 +548,81 @@
 
 
 
+
+    
+    <!-- --------------------------------footer start---------------------------- -->
+
+
+    <section class="footer">
+        <div class="container">
+
+
+          
+
+
+
+            <div class="footer-contents">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="images/trickydot-logo.PNG" alt="">
+                        <div class="d-flex footer-icons">
+                            <a href=""><img src="images/icons/facebook (1).png" alt="" class="img-fluid facebook"></a>
+                            <a href=""><img src="images/icons/footer-instagram.png" alt="" class="img-fluid instagram"></a>
+                            <a href=""><img src="images/icons/footer-twitter.png" alt="" class="img-fluid"></a>
+                            <a href=""><img src="images/icons/footer-youtube.png" alt="" class="img-fluid"></a>
+                            <a href=""><img src="images/icons/footer-behance.png" alt="" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6>Services</h6>
+                        <a href="">Web development</a><br>
+                        <a href="">Software development</a><br>
+                        <a href="">Mobile applcation development</a><br>
+                        <a href="">ERP software development</a><br>
+                        <a href="">Artificial Intelligence  development</a><br>
+                        <a href="">Digital marketing</a><br><br><br>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6>Quick links</h6>
+                        <a href="">Home</a><br>
+                        <a href="">Aout</a><br>
+                        <a href="">Services</a><br>
+                        <a href="">Contact</a><br><br><br><br>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6>Contact us</h6>
+                        <p>Puthanathani, <br>Malappuram,<br>Kerala - 676510</p>
+                        <p>www.trickydot.com  <br>9847505959<br>9847505969</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------------------------footer end---------------------------- -->
+
+
+
+    <div class="news-letter">
+        <div class="container">
+            <h4 class="text-center">Subsribe to our Newsletter</h4>
+            <p class="sub-paragraph text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus in ex. Praesent elementum metus vel suscipit tempus. </p>
+                
+                <div class="newsletter-form">
+                    <div class="row">
+                        <div class="col-lg-4 col-gap">
+                          <input type="text" class="form-control change" placeholder="Enter your name" aria-label="First name">
+                        </div>
+                        <div class="col-lg-4 col-gap">
+                          <input type="email" class="form-control change left-input" placeholder="Enter your email" aria-label="Last name">
+                        </div>
+                        <div class="col-lg-4 col-gap">
+                            <a href=""><button class="btn">Submit</button></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
 
 
 
