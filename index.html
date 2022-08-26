@@ -18,9 +18,9 @@
     
     <!-- --------------------------navbar start------------------------------ -->
 
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-lg bg-white ">
         <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#"><img src="images/trickydot-logo.PNG" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -32,7 +32,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item">
+                <a class="nav-link d-block d-md-none" href="#">Services</a>
+              </li>
+              <li class="nav-item dropdown d-none d-md-block">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Services
@@ -110,22 +113,22 @@
             </div>
               
               <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="staticBackdropLabel">Request a Quote</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body ">
                         <form>
-                            <div class="mb-3">
+                            <div class=" p-3">
                               <input type="text" class="form-control" id="" placeholder="Full Name">
                             </div>
-                            <div class="mb-3">
+                            <div class="p-3">
                                 <input type="email" class="form-control" id="" placeholder="Email">
                             </div>
-                            <div class="mb-3">
+                            <div class="p-3">
                                 <input type="number" class="form-control" id="" placeholder="Phone numer">
                             </div>
                             <!-- <div class="mb-3">
@@ -134,12 +137,12 @@
                             </div> -->
                           </form>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer mb-4">
                       <div class="submit-btn">
                         <button type="button" class="btn text-white" data-bs-dismiss="modal">Submit</button>
                       </div>
                       <div class="close-btn">
-                        <button type="button" class="btn ">Close</button>
+                        <button type="button" class="btn">Close</button>
                       </div>
                       
                     </div>
@@ -159,43 +162,34 @@
             <!-- <p class="item-1">This is your last chance. After this, there is no turning back.</p> -->
   
   <!-- <p class="item-2">You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe.</p> -->
-  <div class="item-1">
-    <div class="row">
-      <div class="col-lg-6">
-  
-      </div>
-      <div class="col-lg-6">
-        <h1 class="text-white">Ready to go for an Upturn in this <br><b class="fst-italic">World of New</b> </h1>
-        <button class="btn">Get a Quote</button>
-      </div>
-    </div>
+
+
+<div class="row">
+  <div class="col-lg-6 upturn-img">
+    <img src="images/132-removebg-preview.png" alt="" class="img-fluid vert-move">
   </div>
+
   
-  
-  <div class="item-2">
-    <div class="row">
-      <div class="col-lg-6">
-  
-      </div>
-      <div class="col-lg-6">
-        <h1 class="text-white">Lorem ipsum dolor <br><b class="fst-italic">amet consectetur</b> </h1>
-      </div>
+<div class="text-slideshow">
+    <div class="col-lg-6">
+        <div class="item-1">
+            <h1 class="text-white">Ready to go for an <br> Upturn in this <br><b class="fst-italic">World of New</b> </h1>
+            <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="btn">Get a Quote</button>
+        </div>
+        <div class="item-2">
+          <h1 class="text-white">Ready to go for an<br> Upturn in this <br><b class="fst-italic">World of New</b> </h1>
+          <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button class="btn">Get a Quote</button>
+        </div>
+        <div class="item-3">
+            <h1 class="text-white">Ready to go for an<br> Upturn in this <br><b class="fst-italic">World of New</b> </h1>
+            <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="btn">Get a Quote</button>
+    
+        </div>
     </div>
-  </div>
-  
-  
-  
-  <div class="item-3">
-    <div class="row">
-      <div class="col-lg-6">
-  
-      </div>
-      <div class="col-lg-6">
-        <h1 class="text-white">Ready to go for an Upturn in this <br><b class="fst-italic">World of New</b> </h1>
-    <button class="btn">Get a Quote</button>
-      </div>
-    </div>
-  </div>
+</div>
   
   
   
@@ -203,6 +197,7 @@
           <div id="container">
             <span id="text1"></span>
             <span id="text2"></span>
+            <span id="text3"></span>
           </div>
         
         
@@ -307,7 +302,7 @@
                 </div> -->
               <div class="service-cards">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 services-card">
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-img-bg">
@@ -322,7 +317,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 services-card">
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-img-bg">
@@ -337,7 +332,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 services-card">
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-img-bg">
@@ -355,8 +350,8 @@
                     </div>
                 </div>
 
-                <div class="row mt-4">
-                    <div class="col-lg-4">
+                <div class="row mt-4 ">
+                    <div class="col-lg-4 services-card">
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-img-bg">
@@ -370,7 +365,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 services-card">
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-img-bg">
@@ -384,7 +379,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 services-card">
                         <div class="card">
                             <div class="card-body">
                                 <div class="card-img-bg">
@@ -528,9 +523,17 @@
                             </div>
                         </div>
                     </div>
+                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button> -->
                 </div>
               </div>
-            
+              
             </div>
         </div>
     </section>
@@ -553,12 +556,12 @@
             </div>
 
             <div class="portfolio-gallery">
-                <div class = "row">
+                <!-- <div class = "row">
                     
-                </div>
+                </div> -->
           
                 <div class = "row mt-3 mb-4 button-group filter-button-group">
-                    <div class = "col d-flex ">
+                    <div class = "col d-flex filter-buttons">
                         <button type = "button" data-filter = "*" class = "btn btn-primary mx-1 text-dark">All</button>
                         <button type = "button" data-filter = ".web-development" class = "btn btn-primary mx-1 text-dark">Web Development</button>
                         <button type = "button" data-filter = ".web-app-development" class = "btn btn-primary mx-1 text-dark">Web App Development</button>
@@ -690,16 +693,16 @@
                       <div class="carousel-item active">
                         <!-- <img src="la.jpg" alt="Los Angeles" class="d-block w-100"> -->
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 reviews">
                                 <div class="card" >
                                     <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-lg-6">
+                                        <div class="row align-items-center mb-3">
+                                            <div class="col-lg-3">
                                                 <img src="images/testimonials/1.png" class="card-img-top" alt="">
                                             </div>
-                                            <div class="col-lg-6">
-                                                <h5 class="card-title client-name">Riya</h5>
-                                                <p class="designation">UI/UX Designer</p>
+                                            <div class="col-lg-9">
+                                                <h5 class="card-title client-name mb-0">Riya</h5>
+                                                <p class="designation mb-0">UI/UX Designer</p>
                                             </div>
                                         </div>
                                             <div class="client-review">
@@ -726,16 +729,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 reviews">
                                 <div class="card" >
                                     <div class="card-body">
-                                        <div class="row">
+                                        <div class="row align-items-center mb-3">
                                             <div class="col-lg-6">
                                                 <img src="images/testimonials/2.png" class="card-img-top" alt="">
                                             </div>
                                             <div class="col-lg-6">
-                                                <h5 class="card-title client-name">Riya</h5>
-                                                <p class="designation">UI/UX Designer</p>
+                                                <h5 class="card-title client-name mb-0">Riya</h5>
+                                                <p class="designation mb-0">UI/UX Designer</p>
                                             </div>
                                         </div>
                                             <div class="client-review">
@@ -762,16 +765,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 reviews">
                                 <div class="card" >
                                     <div class="card-body">
-                                        <div class="row">
+                                        <div class="row align-items-center mb-3">
                                             <div class="col-lg-6">
                                                 <img src="images/testimonials/1.png" class="card-img-top" alt="">
                                             </div>
                                             <div class="col-lg-6">
-                                                <h5 class="card-title client-name">Riya</h5>
-                                                <p class="designation">UI/UX Designer</p>
+                                                <h5 class="card-title client-name mb-0">Riya</h5>
+                                                <p class="designation mb-0">UI/UX Designer</p>
                                             </div>
                                         </div>
                                             <div class="client-review">
@@ -802,16 +805,16 @@
                       </div>
                       <div class="carousel-item">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 reviews">
                                 <div class="card" >
                                     <div class="card-body">
-                                        <div class="row">
+                                        <div class="row align-items-center mb-3">
                                             <div class="col-lg-6">
                                                 <img src="images/testimonials/1.png" class="card-img-top" alt="">
                                             </div>
                                             <div class="col-lg-6">
-                                                <h5 class="card-title client-name">Riya</h5>
-                                                <p class="designation">UI/UX Designer</p>
+                                                <h5 class="card-title client-name mb-0">Riya</h5>
+                                                <p class="designation mb-0">UI/UX Designer</p>
                                             </div>
                                         </div>
                                             <div class="client-review">
@@ -838,16 +841,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 reviews">
                                 <div class="card" >
                                     <div class="card-body">
-                                        <div class="row">
+                                        <div class="row align-items-center mb-3">
                                             <div class="col-lg-6">
                                                 <img src="images/testimonials/1.png" class="card-img-top" alt="">
                                             </div>
                                             <div class="col-lg-6">
-                                                <h5 class="card-title client-name">Riya</h5>
-                                                <p class="designation">UI/UX Designer</p>
+                                                <h5 class="card-title client-name mb-0">Riya</h5>
+                                                <p class="designation mb-0">UI/UX Designer</p>
                                             </div>
                                         </div>
                                             <div class="client-review">
@@ -874,16 +877,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 reviews">
                                 <div class="card" >
                                     <div class="card-body">
-                                        <div class="row">
+                                        <div class="row align-items-center mb-3">
                                             <div class="col-lg-6">
                                                 <img src="images/testimonials/1.png" class="card-img-top" alt="">
                                             </div>
                                             <div class="col-lg-6">
-                                                <h5 class="card-title client-name">Riya</h5>
-                                                <p class="designation">UI/UX Designer</p>
+                                                <h5 class="card-title client-name mb-0">Riya</h5>
+                                                <p class="designation mb-0">UI/UX Designer</p>
                                             </div>
                                         </div>
                                             <div class="client-review">
@@ -942,7 +945,7 @@
 
 
 
-            <section class="hire-a-developer">
+            <!-- <section class="hire-a-developer">
                 <div class="container">
                     <div class="main-head">
                         <h2 class="fw-bold main-head">Hire a <b class="subhead">Developer</b></h2>
@@ -984,6 +987,87 @@
 
 
                 </div>
+            </section> -->
+
+            <section class="hire-a-developer">
+                <div class="container">
+                    <div class="main-head">
+                        <h2 class="fw-bold main-head">Hire a <b class="subhead">Developer</b></h2>
+                    </div>
+                    <div class="portfolio-details">
+                        <p class="sub-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus mi, pharetra sit amet aliquet sit amet, faucibus in ex. Praesent elementum metus vel suscipit tempus. Cras euismod ipsum ipsum, id congue tortor placerat non. Duis efficitur lectus vel vehicula aliquet. Proin lectus nibh, vehicula in cursus quis, euismod dignissim velit. </p>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4 hire-people">
+                                <div class="card-body">
+                                  <h2 class="card-title text-white">Hire Creative People</h2>
+                                  <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                  <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Hire Now</button>
+                                  <div class="modal-bg">
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Request a Quote</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <form>
+                                                    <div class=" p-3">
+                                                      <input type="text" class="form-control" id="" placeholder="Full Name" Required>
+                                                    </div>
+                                                    <div class="p-3">
+                                                        <input type="email" class="form-control" id="" placeholder="Email" Required>
+                                                    </div>
+                                                    <div class="p-3">
+                                                        <input type="number" class="form-control" id="" placeholder="Phone numer" Required>
+                                                    </div>
+                                                    <div class="p-3">
+                                                        <input type="text" class="form-control" id="" placeholder="Job title" Required>
+                                                    </div>
+                                                    <div class="resume">
+                                                        <div class="file btn  ">
+                                                            Upload resume
+                                                            <input type="file" name="file"/>
+                                                        </div>
+                                                    </div>
+                                                  </form>
+                                              </div>
+                                              <div class="modal-footer mb-4">
+                                                <div class="hire-modal-submit-btn">
+                                                  <button type="button" class="btn text-white">Submit</button>
+                                                </div>
+                                                <div class="hire-modal-close-btn">
+                                                  <button type="button" class="btn bg-ingo"  data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                                
+                                              </div>
+                                            </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- <button class="btn">Hire Now</button> -->
+                                </div>
+                              </div>
+                          <div class="col-md-8 framework-logos">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="d-flex logos">
+                                <img src="images/hire a developer/atom.png" alt="">
+                                <img src="images/hire a developer/bootstrap.png" alt="">
+                                <img src="images/hire a developer/html.png" alt="">
+                                <img src="images/hire a developer/python.png" alt="">
+                                <img src="images/hire a developer/logo-java.png" alt="">
+                                <img src="images/hire a developer/flutter-logo.png" alt="">
+                                <img src="images/hire a developer/logo-java.png" alt="">
+                                <img src="images/hire a developer/logo-android.png" alt="">
+                                <img src="images/hire a developer/apple-logo.png" alt="">
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                </div>
             </section>
 
 
@@ -1012,13 +1096,13 @@
                     <div class="col-lg-6 order-1 order-md-0">
                         <form>
                             <div class="mb-3">
-                                <input type="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Enter your name">
+                                <input type="name" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Enter your name" Required> 
                               </div>
                             <div class="mb-3">
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" Required>
                             </div>
                             <div class="mb-3">
-                                <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="emailHelp" placeholder="Phone number">
+                                <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="emailHelp" placeholder="Phone number" Required>
                             </div>
                             <div class="mb-3">
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type your message"></textarea>
@@ -1026,8 +1110,8 @@
                             <div class="choose-files">
                                 <input type="file" />
                             </div>
-                            <button type="submit" class="btn">Send to us</button>
-                          </form>
+                            <button type="submit" class="btn">Send a message</button>
+                        </form>
                     </div>
                     <div class="col-lg-6 contact-img order-0 order-md-1">
                         <img src="images/contact.png" alt="" class="img-fluid vert-move">
@@ -1104,7 +1188,7 @@
             <div class="footer-contents">
                 <div class="row">
                     <div class="col-lg-3">
-                        <img src="images/footer-logo.png" alt="">
+                        <img src="images/logo.svg" alt="">
                         <div class="d-flex footer-icons">
                             <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
@@ -1179,9 +1263,10 @@
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- isotope plugin -->
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- isotope plugin -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  
 
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
