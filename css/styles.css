@@ -125,6 +125,9 @@ body{
     color: gray;
     padding: 0.5em 1em;
   } */
+  .dropdown-menu li .dropdown-item{
+    padding: 0;
+  }
   .dropdown-menu li .dropdown-item:hover {
     color: #7d1128;
   }
@@ -177,6 +180,11 @@ body{
 .main-head h2{
     font-size: 28px;
 }
+.sub-head-style{
+    color: #666061;
+    font-weight: bold;
+}
+
 
 /* -----------------------------------common contents css end--------------------------------- */
 
@@ -656,8 +664,8 @@ body{
 }
 .customers .prev-button button{
     margin-left: -20px;
-    margin-top: 23px;
-    background-color: rgb(172, 162, 162);
+    margin-top: 90px;
+    background-color: rgb(230, 222, 222);
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -665,8 +673,8 @@ body{
 }
 .customers .next-button button{
     margin-right: -20px;
-    margin-top: 23px;
-    background-color: rgb(172, 162, 162);
+    margin-top: 90px;
+    background-color: rgb(230, 222, 222);
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -1025,6 +1033,7 @@ transition: 1s ease;
 .footer .footer-contents h6{
     color: #f5f5f5;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 .footer .footer-icons{
     /* margin-left: 40px; */
@@ -1036,7 +1045,7 @@ transition: 1s ease;
 .footer .footer-icons svg{
     width: 20px;
     height: auto;
-    color: rgb(241, 235, 235);
+    color: rgb(255, 253, 253);
     margin-right: 10px;
     flex-wrap: wrap;
     margin-top: 20px;
@@ -1045,9 +1054,12 @@ transition: 1s ease;
 .footer .footer-icons svg:hover{
     opacity: 0.7;
 }
-.footer .footer-contents a, p{
+.footer .footer-contents p{
+    color: #e7dddd;
+}
+.footer .footer-contents a {
     text-decoration: none;
-    color: #beb5b5;
+    color: #e7dddd;
     font-size: 13px;
 }
 .footer .footer-contents a:hover{
@@ -1470,7 +1482,7 @@ transition: 1s ease;
 .about-us .year-of-experience{
     width: 100%;
     /* height: 200px; */
-    background-color: #7d1128e5;
+    background-color: #8d283ee5;
     margin-top: 50px;
     padding: 30px;
     
@@ -1480,9 +1492,10 @@ transition: 1s ease;
 }
 .about-us .year-of-experience .profile-experience{
     background-color: #7d112800;
-    width: 150px;
+    width: 120px;
     margin: 0 auto;
-    height: 150px;
+    height: 120px;
+    padding: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;   
 }
 .about-us img{
@@ -1515,7 +1528,7 @@ transition: 1s ease;
     padding-bottom: 10px;
  }
  .about-us .card img{
-    width: 60px;
+    width: 50px;
     height: auto;
    margin-top: 20px;
  }
@@ -1562,11 +1575,17 @@ transition: 1s ease;
     margin: 0 auto;
     margin-top: -95px;
 }
-.our-services .card{
+.our-services .our-services-cards a .card {
+    border: 0;
+    border-radius: 0;
     margin: 0 auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.our-services .our-services-cards a .card p{
+    color: #837979;
 }
 .our-services .card img{
-    width: 60px;
+    width: 50px;
     height: auto;
 }
 .our-services .card h5{
@@ -1579,7 +1598,7 @@ transition: 1s ease;
     padding-bottom: 70px;
 }
 .our-services .services-bg p{
-    color: #c5b6b6;
+    color: #c9c0c0;
 }
 .our-services a{
     text-decoration: none;
@@ -1597,50 +1616,17 @@ transition: 1s ease;
 
 
 
-/* -----------------------------------web-development page css end--------------------------------- */
-
-
-.web-development{
-    margin-top: 200px;
-}
-.web-development .web-development-details{
-    width: 80%;
-}
-.web-development .web-development-img1 img{
-    width: 650px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-.webdevelopment-services{
-    
-    margin: 0 auto;
-    margin-top: 100px;
-}
-.webdevelopment-services .contents{
-    width: 90%;
-}
-.web-development .details{
-    background-color: #812944;
-    width: 100%;
-    padding: 40px;
-    margin-top: 50px;
-}
-
-/* -----------------------------------web-development page css end--------------------------------- */
 
 
 
-
-
-/* -----------------------------------software-development page css end--------------------------------- */
+/* -----------------------------------software-development page css start--------------------------------- */
 
 
 .software-development{
-    margin-top: 200px;
+    margin-top: 150px;
 }
 .software-development img{
-    margin-top: -50px;
+    margin-top: 30px;
 }
 .software-development .software-sub-para p{
     width: 80%;
@@ -1654,10 +1640,540 @@ transition: 1s ease;
 .software-development .service-details p{
     width: 80%;
 }
-
+.software-development .software-development-subpara p{
+    margin-top: 100px;
+    font-size: 18px;
+}
 /* .software-development .service-details img{
     margin-top: 100px;
 } */
 
 /* -----------------------------------software-development page css end--------------------------------- */
 
+
+
+
+
+
+
+/* -----------------------------------mobile-application-development page css start--------------------------------- */
+
+.mobile-application-development{
+    margin-top: 200px;
+}
+.mobile-application-development .mob-app-sub-details-1{
+    width: 90%;
+    margin: 0 auto;
+}
+.mobile-application-development .mo-app-technology{
+    margin-top: 100px;
+}
+.mobile-application-development .mo-app-technology p{
+    font-size: 18px;
+    margin-top: 170px;
+}
+.mobile-app-services{
+    margin-top: 100px;
+}
+.mobile-app-services p{
+    width: 90%;
+}
+.mob-app-img2{
+    width: 560px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.mobile-application-development .mob-app-cards{
+    margin-top: 100px;
+}
+.mobile-application-development .mob-app-cards  .card{
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+.mobile-application-development .mob-app-cards  .card h5{
+    color: #776f71;
+}
+.mobile-application-development .mob-app-cards  .card:hover{
+    transform: translate(0,10px);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.mobile-application-development .mob-app-details{
+    margin-top: 100px;
+    background-color: #fcfbfd;
+    padding: 50px;
+}
+.mobile-application-development .mob-app-details .mob-app-detail-contents{
+    width: 90%;
+}
+.mobile-application-development .mob-app-details img{
+    width: 500px;
+    height: auto;
+    margin-top: 30px;
+}
+.mobile-application-development .mob-app-detail-contents-2{
+    margin-top: 90px;
+}
+.mobile-application-development .mob-app-development-details{
+    margin-top: 100px;
+}
+.mobile-application-development .mob-app-development-details img{
+    width: 450px;
+    height: auto;
+}
+.mobile-application-development .mob-app-development-details h3{
+    margin-top: 80px;
+}
+
+
+
+
+/* -----------------------------------mobile-application-development page css end--------------------------------- */
+
+
+
+
+
+
+/* -----------------------------------erp-software-development page css start--------------------------------- */
+
+.erp-software-development{
+    margin-top: 200px;
+}
+.erp-software-development .mob-app-sub-details-1{
+    width: 90%;
+    margin: 0 auto;
+}
+.erp-software-development .mo-app-technology{
+    margin-top: 100px;
+}
+.erp-software-development .mo-app-technology p{
+    font-size: 18px;
+    margin-top: 170px;
+}
+.erp-services{
+    margin-top: 100px;
+}
+.erp-services p{
+    width: 90%;
+}
+.mob-app-img2{
+    width: 560px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.erp-software-development .erp-cards{
+    margin-top: 100px;
+}
+.erp-software-development .erp-cards  .card{
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+.erp-software-development .erp-cards  .card h5{
+    color: #776f71;
+}
+.erp-software-development .erp-cards  .card:hover{
+    transform: translate(0,10px);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.erp-software-development .erp-softaware-services{
+    margin-top: 60px;
+    background-color: #fcfbfd;
+    padding: 50px;
+}
+.erp-software-development .erp-softaware-services .erp-softaware-services-1{
+    width: 90%;
+}
+.erp-software-development .erp-softaware-services img{
+    width: 400px;
+    height: auto;
+    
+}
+.erp-software-development .erp-softaware-services-2{
+    margin-top: 80px;
+}
+.erp-software-development .erp-details{
+    margin-top: 100px;
+}
+.erp-software-development .erp-details img{
+    width: 700px;
+    height: auto;
+    
+}
+.erp-software-development .erp-details h3{
+    margin-top: 80px;
+}
+
+
+/* -----------------------------------erp-software-development page css end--------------------------------- */
+
+
+
+
+
+/* -----------------------------------software-development page css start--------------------------------- */
+
+.software-development{
+    margin-top: 200px;
+}
+.software-development .mob-app-sub-details-1{
+    width: 90%;
+    margin: 0 auto;
+}
+.software-development .software-development-technology{
+    margin-top: 50px;
+}
+.software-development .software-development-technology p{
+    font-size: 18px;
+    margin-top: 190px;
+}
+.software-services{
+    margin-top: 100px;
+}
+.software-services p{
+    width: 90%;
+}
+.software-development-img2{
+    width: 700px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.software-development .software-cards{
+    margin-top: 100px;
+}
+.software-development .software-cards  .card{
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+.software-development .software-cards  .card h5{
+    color: #776f71;
+}
+.software-development .software-cards  .card:hover{
+    transform: translate(0,10px);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.software-development .software-development-details{
+    margin-top: 100px;
+    background-color: #fcfbfd;
+    padding: 50px;
+}
+.software-development .software-development-details .software-detail-contents{
+    width: 90%;
+}
+.software-development .software-development-details img{
+    width: 500px;
+    height: auto;
+    margin-top: -30px;
+}
+.software-development .software-detail-contents-2{
+    margin-top: 90px;
+}
+.software-development .software-development-details{
+    margin-top: 100px;
+}
+.software-development .software-development-details img{
+    width: 450px;
+    height: auto;
+}
+.software-development .software-development-details h3{
+    margin-top: 80px;
+}
+
+
+
+
+/* -----------------------------------software-development page css end--------------------------------- */
+
+
+
+
+
+
+/* -----------------------------------web-development page css start--------------------------------- */
+
+.web-development{
+    margin-top: 200px;
+}
+.web-development .web-app-sub-details-1{
+    width: 90%;
+    margin: 0 auto;
+}
+.web-development .web-app-technology{
+    margin-top: 80px;
+}
+.web-development .web-app-technology p{
+    font-size: 18px;
+    margin-top: 180px;
+}
+.web-app-services{
+    margin-top: 100px;
+}
+.web-app-services p{
+    width: 90%;
+}
+.web-app-img2{
+    width: 560px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.web-development .web-app-cards{
+    margin-top: 100px;
+}
+.web-development .web-app-cards  .card{
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+.web-development-details{
+    margin-top: 100px;
+}
+.web-development-details h3{
+    margin-top: 100px;
+}
+.web-development-details img{
+    width: 460px;
+    height:  auto;
+    margin-top: 30px;
+}
+.web-development .web-app-cards  .card h5{
+    color: #776f71;
+}
+.web-development .web-app-cards  .card:hover{
+    transform: translate(0,10px);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.web-development .web-app-details{
+    margin-top: 100px;
+    background-color: #fcfbfd;
+    padding: 50px;
+}
+.web-development .web-app-details .web-app-detail-contents{
+    width: 90%;
+}
+.web-development .web-app-details img{
+    width: 420px;
+    height: auto;
+    margin-top: 30px;
+}
+.web-development .web-app-detail-contents-2{
+    margin-top: 90px;
+}
+.web-development .mob-app-development-details{
+    margin-top: 100px;
+}
+.web-development .mob-app-development-details img{
+    width: 450px;
+    height: auto;
+}
+.web-development .mob-app-development-details h3{
+    margin-top: 80px;
+}
+
+
+
+
+/* -----------------------------------web-development page css end--------------------------------- */
+
+
+
+
+
+
+/* -----------------------------------artificial-intelligence-development page css start--------------------------------- */
+
+.ai-intelligence-development{
+    margin-top: 200px;
+}
+.ai-intelligence-development .ai-sub-details-1{
+    width: 90%;
+    margin: 0 auto;
+}
+.ai-intelligence-development .ai-intelligence-technology{
+    margin-top: 100px;
+}
+.ai-intelligence-development .ai-intelligence-technology p{
+    font-size: 18px;
+    margin-top: 170px;
+}
+.ai-intelligence-development .ai-intelligence-technology img{
+    width: 500px;
+    height: auto;
+}
+.ai-services{
+    margin-top: 100px;
+}
+.ai-services p{
+    width: 90%;
+}
+.ai-img2{
+    width: 560px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.ai-intelligence-development .ai-cards{
+    margin-top: 100px;
+}
+.ai-intelligence-development .ai-cards  .card{
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+.ai-intelligence-development .ai-cards  .card h5{
+    color: #776f71;
+}
+.ai-intelligence-development .ai-cards  .card:hover{
+    transform: translate(0,10px);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.ai-intelligence-development .ai-details{
+    margin-top: 100px;
+    background-color: #fcfbfd;
+    padding: 50px;
+}
+.ai-intelligence-development .ai-details .ai-detail-contents{
+    width: 90%;
+}
+.ai-intelligence-development .ai-details img{
+    width: 400px;
+    height: auto;
+   
+}
+.ai-intelligence-development .ai-detail-contents-2{
+    margin-top: 90px;
+}
+.ai-intelligence-development .ai-intelligence-development-details{
+    margin-top: 100px;
+}
+.ai-intelligence-development .ai-intelligence-development-details img{
+    width: 450px;
+    height: auto;
+}
+.ai-intelligence-development .ai-intelligence-development-details h3{
+    margin-top: 80px;
+}
+
+
+
+
+/* -----------------------------------ai-intelligence-developmentpage css end--------------------------------- */
+
+
+
+
+
+/* -----------------------------------mobile-application-development page css start--------------------------------- */
+
+.digital-marketing{
+    margin-top: 200px;
+}
+.digital-marketing .digital-marketing-details-1{
+    width: 90%;
+    margin: 0 auto;
+}
+.digital-marketing .digital-marketing-technology{
+    margin-top: 100px;
+}
+
+.digital-marketing .digital-marketing-technology img{
+    width: 400px;
+    height: auto;
+}
+.digital-marketing .digital-marketing-technology p{
+    font-size: 18px;
+    margin-top: 170px;
+}
+.digital-marketing-services{
+    margin-top: 100px;
+}
+.digital-marketing-services p{
+    width: 90%;
+}
+.digital-img2{
+    width: 560px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.digital-marketing .digital-cards{
+    margin-top: 100px;
+}
+.digital-marketing .digital-cards  .card{
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    padding: 20px;
+    transition: 0.5s ease;
+}
+.digital-marketing .digital-cards  .card h5{
+    color: #776f71;
+}
+.digital-marketing .digital-cards  .card:hover{
+    transform: translate(0,10px);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.digital-marketing .digital-details{
+    margin-top: 100px;
+    background-color: #fcfbfd;
+    padding: 50px;
+}
+.digital-marketing .digital-details .digital-detail-contents{
+    width: 90%;
+}
+.digital-marketing .digital-details img{
+    width: 500px;
+    height: auto;
+    margin-top: 30px;
+}
+.digital-marketing .digital-detail-contents-2{
+    margin-top: 90px;
+}
+.digital-marketing .digital-marketing-details{
+    margin-top: 100px;
+}
+.digital-marketing .digital-marketing-details img{
+    width: 450px;
+    height: auto;
+}
+.digital-marketing .digital-marketing-details h3{
+    margin-top: 80px;
+}
+
+
+
+
+/* -----------------------------------mobile-application-development page css end--------------------------------- */
