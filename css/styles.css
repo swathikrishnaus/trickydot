@@ -3,6 +3,65 @@ body{
     font-family: poppins;
     font-size: 14px;
 }
+/* --------------------navbar toggler------------------- */
+
+.navbar .toggler{
+    border: 0;
+}
+.navbar .toggler:focus,
+.navbar .toggler.active,
+.navbar .toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: #7d1128;
+    display: block;
+    border: 0;
+    transition: all 0.2s;
+}
+.middle-bar{
+    margin: 5px auto;
+}
+.navbar-toggler .top-bar{
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+    border: 0;
+}
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+
+}
+.navbar-toggler .bottom-bar{
+    transform: rotate(-45deg);
+    transform-origin: 10% 10%;
+    border: 0;
+}
+.navbar-toggler.collapsed .top-bar{
+    transform: rotate(0);
+    border: 0;
+}
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    border: 0;
+}
+.navbar-toggler.collapsed .bottom-bar{
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .toggler-icon{
+    background-color: #7d1128;
+    border: 0;
+}
+
+
+/* --------------------navbar toggler------------------- */
+
+
 .navbar{
     padding: 0;
     z-index: 10;
@@ -51,6 +110,7 @@ body{
     background-color: #7d1128;
     color: white;
     border-radius: 0;
+    margin-left: 20px;
     padding: 10px 15px;
     transition: 0.5s ease;
 }
@@ -128,6 +188,9 @@ body{
 .navbar .navbar-nav .nav-item a:hover, .navbar .navbar-nav .nav-item a:focus{
     color: #7d1128;
 }
+.navbar .navbar-nav .nav-item a:hover, .navbar .navbar-nav .nav-item a.active{
+    color: #7d1128;
+} 
   .dropdown-menu {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     border: none;
@@ -141,11 +204,21 @@ body{
     .dropdown-menu{
         margin: 0 auto;
     }
+    .navbar  .quote-btn .btn{
+        margin-left: 0px;
+    }
     .dropdown:hover .dropdown-menu {
       display: flex;
     }
+    .navbar-toggler:focus{
+        border: 0px transparent;
+    }
     .dropdown-menu.show {
       display: flex;
+    }
+    .navbar  .quote-btn .btn{
+        margin-left: auto;
+        /* margin-bottom: 25px; */
     }
   }
   .dropdown-menu ul {
@@ -175,6 +248,9 @@ body{
       flex-wrap: wrap;
       max-height: 350px;
       overflow-y: scroll;
+    }
+    .navbar{
+        padding: 10px;
     }
   }
   @media only screen and (min-width: 992px) and (max-width: 1140px) {
@@ -312,6 +388,7 @@ body{
         margin-top: -30px;
         margin-bottom: 30px;
     }
+   
 }
 
 
@@ -398,7 +475,7 @@ body{
         padding: 0;
     }
  .services-card{
-    margin-top: 25px;
+    margin-top: 30px;
  }
     .services .service-cards .card{
         margin-top: 100px;
@@ -499,6 +576,7 @@ body{
         margin-left: 100px;
        
     }
+    
 }
 
 
@@ -714,7 +792,7 @@ body{
 }
 .customers .prev-button button{
     margin-left: -20px;
-    margin-top: 90px;
+    margin-top: 85px;
     background-color: rgb(230, 222, 222);
     width: 30px;
     height: 30px;
@@ -723,7 +801,7 @@ body{
 }
 .customers .next-button button{
     margin-right: -20px;
-    margin-top: 90px;
+    margin-top: 85px;
     background-color: rgb(230, 222, 222);
     width: 30px;
     height: 30px;
@@ -735,6 +813,9 @@ body{
     .customers .customers-details p{
         width: 100%;
     }
+    .customers{
+        margin-top: -50px;
+    }
     .customers .carousel-inner img{
        width: 100px;
        height: auto;
@@ -743,7 +824,8 @@ body{
         margin-top: 20px;
     }
     .customer-background{
-        height: 900px;
+        height: 100%;
+        padding: 20px;
     }
    
 }
@@ -767,6 +849,13 @@ body{
     border-radius: 0;
     transition: 1s ease;
 }
+.portfolio .load-more button{
+    background-color: #7d1128;
+    color: white;
+    border-radius: 0;
+    transition: 0.5s ease;
+    padding:  6px 10px;
+}
 .portfolio img:hover{
     
     opacity:0.8;
@@ -780,16 +869,18 @@ transition: 1s ease;
     .portfolio-details p{
         width: 100%;
     }
-    .portfolio .portfolio-gallery  .filter-buttons .btn{
+    .portfolio   .filter-buttons {
         display: block;
+        flex-wrap: wrap;
     }
 }
 .portfolio  .btn{
     font-size: 13px;
     margin-top: 30px;
     margin-bottom: 30px;
+    border-radius: 0;
 }
-.portfolio  .btn
+
 
 .portfolio  .btn:focus{
     outline: none!important;
@@ -799,7 +890,7 @@ transition: 1s ease;
     background-color: #fff!important;
     border: none;
 }
-.portfolio  .btn-primary:hover, .portfolio  .btn-primary:focus{
+.portfolio  .btn-primary:hover, .portfolio  .btn-primary:focus, .portfolio  .btn-primary.active{
     background-color: #7d1128!important;
     color: #fff!important;
 }
@@ -817,17 +908,6 @@ transition: 1s ease;
 /* -----------------------------------portfolio css end-------------------------------- */
 
 
-
-
-
-
-/* -----------------------------------testimonial css start-------------------------------- */
-
-
-
-
-
-/* -----------------------------------testimonial css end-------------------------------- */
 
 
 
@@ -886,6 +966,10 @@ transition: 1s ease;
 
 .address-deatils .address-contents p{
     
+    color: rgb(120, 116, 128);
+}
+.address-deatils .address-contents p a{
+    text-decoration: none;
     color: rgb(120, 116, 128);
 }
 /* .address-deatils .address-contents h5{
@@ -976,7 +1060,9 @@ transition: 1s ease;
     font-weight: bold;
     margin-bottom: 20px;
 }
-
+.contact .address-contents a{
+    text-decoration: none;
+}
  img.vert-move {
     -webkit-animation: mover 2.3s infinite  alternate;
     animation: mover 1s infinite  alternate;
@@ -1000,6 +1086,14 @@ transition: 1s ease;
     .contact .contact-details p{
         width: 100%;
     }
+    .address-deatils .address-contents .followus-icons .rounded-icon svg{
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contact  .address-deatils {
+        margin-top: 100px;
+    }
     .contact form{
         width: 100%;
         height: auto;
@@ -1007,6 +1101,20 @@ transition: 1s ease;
     }
     .contact  .address-deatils .office-address-img img{
         margin-top: 80px;
+    }
+    .address-deatils .office-address img{
+        margin: 0 auto;
+        margin-top: 30px;
+        display: block;
+    }
+    .address-deatils .office-address h5,
+    .address-deatils .office-address p,
+    .address-deatils .office-address a {
+        text-align: center;
+    }
+    .contact .linkedin-icon svg{
+        margin: 0 auto;
+        display: block;
     }
 }
 
@@ -1172,8 +1280,12 @@ transition: 1s ease;
 }
 @media(max-width: 991px){
     .footer{
-        margin-top: 500px;
+        margin-top: 400px;
     }
+    .footer .footer-icons{
+        margin-bottom: 30px;
+    }
+    
 }
 
 
@@ -1430,21 +1542,31 @@ transition: 1s ease;
 /* -----------------------------------contact-us css start--------------------------------- */
 
 .contact-us{
-    margin-top: 200px;
+    margin-top: 100px;
+}
+.contact-us .contact-us-bg{
+    padding-top: 100px;
+    background-color: #7d1128;
 }
 .contact-us .contact-us-para{
     width: 95%;
     margin: 0 auto;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
+}
+.contact-us .contact-us-bg h2{
+    color: #e9e3e3;
+}
+.contact-us .contact-us-bg p{
+    color: #e9e3e3b9;
 }
 .contact-us form{
     margin-left: 50px;
     width: 100%;
     padding: 50px;
-    margin-top: -100px;
+    margin-top: -10px;
 
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-   /* background-color: #7d1128ee; */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        /* background-color: #7d1128ee; */
 }
 .contact-us ::placeholder {
     color: rgb(177, 162, 162);
@@ -1459,7 +1581,7 @@ transition: 1s ease;
    
   }
   .contact-us img{
-    margin-top: -140px;
+    margin-top: -78px;
   }
   .contact-us .contact-us-icons{
     align-items: center;
@@ -1494,7 +1616,7 @@ transition: 1s ease;
     margin-top: 100px;
 }
 .contact-us .Contact-informations{
-    background-color: #e2dbe671;
+    background-color: #f1ecf371;
     padding: 40px;
 }
 .contact-us .Contact-informations{
@@ -1502,9 +1624,11 @@ transition: 1s ease;
 }
 .contact-us .Contact-informations p{
     color: #706868;
+    text-align: center;
 }
 .contact-us .Contact-informations a{
     text-decoration: none;
+    text-align: center;
     color: #706868;
 }
 .contact-us .Contact-informations a:hover{
@@ -1518,7 +1642,10 @@ transition: 1s ease;
     width: 16px;
     height: auto;
     color: #7d1128;
-    margin-bottom: 30px;
+    display: block;
+    
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .contact-us form input, .contact-us form textarea{
@@ -1529,30 +1656,7 @@ transition: 1s ease;
     background-color: transparent;
     margin-top: 25px;
 }
-/* .contact-us .contact-icons-bg{
-    background-color: #e9e3e3;
-    height: 150px;
-    padding: 50px;
-} */
-/* .contact-us  .location-bg{
-    background-color: #e7dcde;
-    width: 150px;
-    height: 150px;
-}
-.contact-us  .call-bg{
-    background-color: #dad0d2;
-    width: 150px;
-    height: 150px;
-}
-.contact-us  .mail-bg{
-    background-color: #eee8e9;
-    width: 150px;
-    height: 150px;
-} */
 
-/* .contact-us  .mail-bg a:hover{
-    color: #aca2a2;
-} */
 .contact-us form button{
     margin-top: 30px;
     padding: 10px 50px;
@@ -1565,6 +1669,11 @@ transition: 1s ease;
     background-color: transparent;
     color: #7d1128;
     border-color: #7d1128;
+}
+@media(max-width: 991px){
+    .contact-us form{
+        margin: 0 auto;
+    }
 }
 
 /* -----------------------------------contact-us css end--------------------------------- */
@@ -1713,6 +1822,7 @@ transition: 1s ease;
  }
  .about-us .core-values-para{
     width: 80%;
+    margin-bottom: 10px;
  }
  .about-us .core-values-para .card img{
     width: 100%;
@@ -1735,8 +1845,45 @@ transition: 1s ease;
     margin-top: 150px;
  }
 
-
-
+ @media(max-width: 991px){
+    .about-us .about-image-bg-mob img{
+        margin-top: 10px;
+        
+        margin-left: -50px;
+    }
+    .about-us .faq img{
+        width: auto;
+        height: auto;
+    }
+    .about-us .faq-para{
+        width: 100%;
+    }
+    .about-us .core-values-para{
+        width: 100%;
+     }
+     .about-us .carousel-logos img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+     }
+     .about-us  .core-values .card{
+        
+        margin: 0 auto;
+        margin-bottom: 25px;
+     }
+     .about-us .meet-our-team .top-pad{
+        margin-bottom: 25px;
+    }
+    .about-us .our-story .our-story-para{
+        width: 100%;
+    }
+     
+ }
+ @media(max-width: 991px){
+    .main-head h2{
+        text-align: center;
+    }
+ }
 
 
 
@@ -2566,6 +2713,9 @@ transition: 1s ease;
 
 .about-us .faq{
     margin-top: 100px;
+}
+.about-us .faq img{
+    margin-top: 80px;
 }
 .about-us .faq-para{
     width: 80%;
