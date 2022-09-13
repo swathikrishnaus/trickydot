@@ -3,6 +3,11 @@ body{
     font-family: poppins;
     font-size: 14px;
 }
+@media only screen and (min-width: 992px){
+    body{
+        padding: 10px;
+    }
+}
 /* --------------------navbar toggler------------------- */
 
 .navbar .toggler{
@@ -26,8 +31,12 @@ body{
 .middle-bar{
     margin: 5px auto;
 }
+.navbar-toggler{
+    outline: none;
+    border: 0;
+}
 .navbar-toggler .top-bar{
-    transform: rotate(45deg);
+    transform: rotate(46deg);
     transform-origin: 10% 10%;
     border: 0;
 }
@@ -37,7 +46,7 @@ body{
 
 }
 .navbar-toggler .bottom-bar{
-    transform: rotate(-45deg);
+    transform: rotate(-46deg);
     transform-origin: 10% 10%;
     border: 0;
 }
@@ -187,9 +196,11 @@ body{
 }
 .navbar .navbar-nav .nav-item a:hover, .navbar .navbar-nav .nav-item a:focus{
     color: #7d1128;
+    font-weight: bold;
 }
 .navbar .navbar-nav .nav-item a:hover, .navbar .navbar-nav .nav-item a.active{
     color: #7d1128;
+    font-weight: bold;
 } 
   .dropdown-menu {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -463,8 +474,11 @@ body{
 .services .card:hover h6{
     color: rgb(20, 20, 20);
 }
-.services .card a:hover{
+.services .card a{
     color: #6d172d;
+}
+.services .card a:hover{
+    color: #746f71;
 }
 @media(max-width: 991px){
     .services .service-details p{
@@ -660,16 +674,15 @@ body{
 
 .hire-a-developer .modal-bg{
     background-image: url('../images/about-img.png') repeat 0 0;
-    /* background-image: url("images/about-img.png"); */
     background-size: cover;
-
 }
-
+.hire-a-developer .modal .btn-close{
+    position: absolute;
+    right: 0;
+}
 .hire-a-developer .modal {
     padding: 30px;
-    background-image: url('../images/about-img.png') repeat 0 0;
-    /* background-image: url("images/about-img.png"); */
-    background-size: cover;
+    padding-bottom: 30px;
 }
 .hire-a-developer .modal .modal-title{
     color: #7d1128;
@@ -680,7 +693,7 @@ body{
     border-radius: 0;
     border-width: 0px 0px 1px 0px;
 }
-.hire-a-developer .modal .modal-content .hire-modal-close-btn .btn{
+.hire-a-developer .modal .buttons .submit-btn button{
     background-color: transparent;
     border-color: #7d1128;
     color: #7d1128;
@@ -1555,9 +1568,11 @@ transition: 1s ease;
 }
 .contact-us .contact-us-bg h2{
     color: #e9e3e3;
+    font-weight: bolder;
 }
 .contact-us .contact-us-bg p{
     color: #e9e3e3b9;
+    text-align: justify;
 }
 .contact-us form{
     margin-left: 50px;
@@ -1625,11 +1640,13 @@ transition: 1s ease;
 .contact-us .Contact-informations p{
     color: #706868;
     text-align: center;
+    margin-bottom: 0;
 }
 .contact-us .Contact-informations a{
     text-decoration: none;
     text-align: center;
     color: #706868;
+    margin-bottom: 0;
 }
 .contact-us .Contact-informations a:hover{
     color: #7d1128;
@@ -1843,6 +1860,8 @@ transition: 1s ease;
  }
  .about-us .core-values-cards{
     margin-top: 150px;
+    padding-left: 60px;
+    padding-right: 60px;
  }
 
  @media(max-width: 991px){
@@ -2815,3 +2834,77 @@ transition: 1s ease;
 	height: 20px; 
   border-radius: 50%;  
 } */
+
+
+
+
+
+
+
+
+.portfolio .hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.portfolio .hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.portfolio .hvrbox img {
+	max-width: 100%;
+}
+.portfolio .hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.portfolio .hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	/* height: 100%; */
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	/* padding: 15px; */
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.portfolio .hvrbox:hover .hvrbox-layer_top,
+.portfolio .hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.portfolio .hvrbox .hvr-btn button:hover{
+    opacity: .7;
+}
+.portfolio .hvrbox .hvr-btn button{
+    padding: 10px 25px;
+    color: rgb(54, 50, 50);
+    background-color: #f0f0f0;
+    text-align: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.portfolio .hvrbox .hvr-btn {
+	text-align: center;
+    
+    
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.portfolio .hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
