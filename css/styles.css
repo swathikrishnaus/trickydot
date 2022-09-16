@@ -3,11 +3,7 @@ body{
     font-family: poppins;
     font-size: 14px;
 }
-@media only screen and (min-width: 992px){
-    body{
-        padding: 10px;
-    }
-}
+
 /* --------------------navbar toggler------------------- */
 
 .navbar .toggler{
@@ -19,6 +15,9 @@ body{
     outline: none;
     box-shadow: none;
     border: 0;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
 }
 .toggler-icon{
     width: 30px;
@@ -36,8 +35,8 @@ body{
     border: 0;
 }
 .navbar-toggler .top-bar{
-    transform: rotate(46deg);
-    transform-origin: 10% 10%;
+    transform: rotate(45deg);
+    transform-origin: 11% 11%;
     border: 0;
 }
 .navbar-toggler .middle-bar{
@@ -46,8 +45,8 @@ body{
 
 }
 .navbar-toggler .bottom-bar{
-    transform: rotate(-46deg);
-    transform-origin: 10% 10%;
+    transform: rotate(-45deg);
+    transform-origin: 11% 11%;
     border: 0;
 }
 .navbar-toggler.collapsed .top-bar{
@@ -216,7 +215,7 @@ body{
         margin: 0 auto;
     }
     .navbar  .quote-btn .btn{
-        margin-left: 0px;
+        margin-left: 8px;
     }
     .dropdown:hover .dropdown-menu {
       display: flex;
@@ -269,6 +268,7 @@ body{
       width: 40vw;
       flex-wrap: wrap;
     }
+  
   }
 
 
@@ -823,6 +823,9 @@ body{
 }
 
 @media(max-width: 991px){
+    .customers{
+        margin-top: 550px;
+    }
     .customers .customers-details p{
         width: 100%;
     }
@@ -839,6 +842,8 @@ body{
     .customer-background{
         height: 100%;
         padding: 20px;
+        padding-top: 50PX;
+        margin-top: 150px;
     }
    
 }
@@ -885,12 +890,13 @@ transition: 1s ease;
     .portfolio   .filter-buttons {
         display: block;
         flex-wrap: wrap;
+        margin-top: -10px;
     }
 }
 .portfolio  .btn{
     font-size: 13px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 25px;
+    /* margin-bottom: 30px; */
     border-radius: 0;
 }
 
@@ -998,6 +1004,9 @@ transition: 1s ease;
     height: auto;
     color: #7d1128;
     
+}
+.address-deatils .address-contents .followus-icons{
+    justify-content: center;
 }
 .address-deatils .address-contents .followus-icons svg:hover{
     opacity: 0.7;
@@ -1642,6 +1651,7 @@ transition: 1s ease;
     text-align: center;
     margin-bottom: 0;
 }
+
 .contact-us .Contact-informations a{
     text-decoration: none;
     text-align: center;
@@ -1690,6 +1700,9 @@ transition: 1s ease;
 @media(max-width: 991px){
     .contact-us form{
         margin: 0 auto;
+    }
+    .contact-us .Contact-informations svg{
+        margin-top: 15px;
     }
 }
 
@@ -1858,10 +1871,17 @@ transition: 1s ease;
     height: auto;
    margin-top: 20px;
  }
+ .about-us  .core-card-top{
+    margin-bottom: 20px;
+ }
  .about-us .core-values-cards{
     margin-top: 150px;
     padding-left: 60px;
     padding-right: 60px;
+ }
+ .about-us .core-values-cards .card{
+    width: 100%;
+    margin-top: 50px;
  }
 
  @media(max-width: 991px){
@@ -1885,10 +1905,11 @@ transition: 1s ease;
         margin: 0 auto;
         margin-top: 15px;
      }
-     .about-us  .core-values .card{
+     .about-us .core-values .card{
         
-        margin: 0 auto;
+        
         margin-bottom: 25px;
+        margin: 0 auto;
      }
      .about-us .meet-our-team .top-pad{
         margin-bottom: 25px;
@@ -2686,12 +2707,13 @@ transition: 1s ease;
 }
 @media only screen and (max-width: 992px){
     .home img{
-        margin-top: 8px;
+        
         border-radius: 50px;
         height: 420px;
         width: auto;
         display: block;
         margin: 0 auto;
+        margin-top: 11px;
     }
     .home h1{
         font-size: 35px;
