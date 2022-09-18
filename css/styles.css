@@ -1573,6 +1573,7 @@ transition: 1s ease;
 .contact-us .contact-us-para{
     width: 95%;
     margin: 0 auto;
+    margin-top: 80px;
     /* margin-bottom: 200px; */
 }
 .contact-us .contact-us-bg h2{
@@ -2051,7 +2052,8 @@ transition: 1s ease;
     padding-top: 200px;
     padding-bottom: 70px;
 }
-.our-services .services-bg p{
+.our-services .services-bg h4{
+    margin-top: 20px;
     color: #c9c0c0;
 }
 .our-services a{
@@ -2652,7 +2654,7 @@ transition: 1s ease;
     color: #7d1128;
 }
 .home .home-texts p{
-    margin-left: -45px;
+    margin-left: -240px;
 }
 .home p{
     text-align: center;
