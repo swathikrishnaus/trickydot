@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- <title>tryckyDot</title> -->
+    <link rel="icon" type="image/x-icon" href="images/tricky.jpeg" style="border-radius: 50%;">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css" integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="images/title-image.jpg">
+    
   </head>
   <body>
    
@@ -114,9 +116,9 @@
           
 
           <div class="quote-btn">
-              <button type="button" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  Get a Quote
-              </button>
+            <button type="button" class="btn btn-sm" style="display: block; margin: 0 auto;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Get a Quote
+          </button>
           </div>
           
       </div>
@@ -145,7 +147,7 @@
       <!-- <div class="about-image-bg-mob d-block d-md-none">
         <img src="images/about-us2.png" alt="" class="vert-move">
       </div> -->
-      <div class="row">
+      <div class="row padding-gap">
         <!-- <div class="col-lg-6 ">
           <div class="about-image-bg-mob d-block d-md-none">
               <img src="images/about-us2.png" alt="" class="vert-move">
@@ -317,7 +319,7 @@
     <div class="container">
       <div class="core-values">
         <h4 class="fw-bold main-head">Core Values of  <b class="subhead">Our Company</b></h4>
-          <div class="core-values-para">
+          <div class="core-values-para padding-gap">
             <p class="sub-paragraph  text-justify" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem, tempor non justo a, auctor tempus felis. In volutpat enim quis tellus hendrerit tincidunt eu at lectus. Suspendisse sit amet turpis nec arcu mattis aliquet. Aenean et metus ut elit suscipit aliquet hendrerit ac erat. Praesent scelerisque lectus vitae ligula fermentum, eget gravida mi scelerisque. Vestibulum dolor nibh, dictum id commodo a, maximus eu dui. Maecenas est massa, cursus eget laoreet sed, lobortis eu mauris. Maecenas est massa, cursus eget laoreet sed, lobortis eu mauris.  Maecenas est massa, cursus eget laoreet sed, lobortis eu mauris. Maecenas est massa, cursus eget laoreet sed, lobortis eu mauris.</p>
 
           </div>
@@ -345,17 +347,18 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+
+            <div class="col-lg-4 core-card-top ">
               <div class="card">
                 <div class="card-body">
-                  <img src="images/about-us/why.png" alt="..."  class="card-img-top mb-2">
+                  <img src="images/about-us/why.png" alt="..." class="mb-2">
                   <h5 class="card-title fw-bold mt-2">Why choose us?</h5>
-                  <p class="card-text">We listen and then organise.
-                    We follow proven ethical processes and  focus on virtual output which has profit for you. 
+                  <p class="card-text">We listen and then organise. We follow proven ethical processes and  focus on virtual output which has profit for you. 
                     We deliver on time & on budget</p>
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       
@@ -374,7 +377,7 @@
               <p class="sub-paragraph  text-justify mb-5" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mauris sem, tempor non justo a, auctor tempus felis. In volutpat enim quis tellus hendrerit tincidunt eu at lectus. Suspendisse sit amet turpis nec arcu mattis aliquet. Aenean et metus ut elit suscipit aliquet hendrerit ac erat. Praesent scelerisque lectus vitae ligula fermentum, eget gravida mi scelerisque.</p>
             </div>
             <div class="meet-our-team ">
-              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="row team-card-row">
@@ -442,15 +445,91 @@
                       </div>
                     </div>
                   </div>
+                </div> -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active d-md-none d-none" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="d-md-none d-none"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="d-md-none d-none"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row team-card-row">
+                        <div class="col-lg-4 top-pad">
+                          <div class="teams card-gap">
+                            <div class="team-img-bg " >
+                              <img src="images/our-team/swa.png" alt="">
+                              <div class="team-designation-bg">
+                                <h6 class="name text-center mt-3">Aslam</h6>
+                                <p class="name text-center">Designaton</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 ">
+                          <div class="teams card-gap">
+                            <div class="team-img-bg " >
+                              <img src="images/our-team/swa.png" alt="">
+                              <div class="team-designation-bg">
+                                <h6 class="name text-center mt-3">Noufal</h6>
+                                <p class="name text-center">Designaton</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 ">
+                          <div class="teams card-gap">
+                            <div class="team-img-bg " >
+                              <img src="images/our-team/swa.png" alt="">
+                              <div class="team-designation-bg">
+                                <h6 class="name text-center mt-3">Nishad</h6>
+                                <p class="name text-center">Designaton</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row team-card-row">
+                        <div class="col-lg-4 ">
+                          <div class="teams card-gap">
+                            <div class="team-img-bg " >
+                              <img src="images/our-team/swa.png" alt="">
+                              <div class="team-designation-bg">
+                                <h6 class="name text-center mt-3">Hanna</h6>
+                                <p class="name text-center">Designaton</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 ">
+                          <div class="teams">
+                            <div class="team-img-bg " >
+                              <img src="images/our-team/swa.png" alt="">
+                              <div class="team-designation-bg">
+                                <h6 class="name text-center mt-3">Swathi</h6>
+                                <p class="name text-center">Designaton</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 ">
+                         
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <button class="carousel-control-prev prev-btn d-none d-md-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next next-btn  d-none d-md-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button> -->
               </div>
             </div>
         </div>
@@ -717,7 +796,7 @@
                         </svg></a>
                   </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 footer-links">
                   <h6>Services</h6>
                   <a href="services.html">Web development</a><br>
                   <a href="services.html">Software development</a><br>
@@ -726,14 +805,14 @@
                   <a href="services.html">Artificial Intelligence  development</a><br>
                   <a href="services.html">Digital marketing</a><br><br><br>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 footer-links">
                   <h6>Quick links</h6>
                   <a href="index.html">Home</a><br>
                   <a href="about.html">Aout</a><br>
                   <a href="services.html">Services</a><br>
                   <a href="contact.html">Contact</a><br><br><br><br>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 footer-links">
                   <h6>Contact us</h6>
                   <p>Puthanathani, <br>Malappuram,<br>Kerala - 676510</p>
                   <p><a href="www.trickydot.com">www.trickydot.com</a>  <br>9847505959<br>9847505969</p>
