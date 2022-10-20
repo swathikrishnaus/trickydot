@@ -1814,16 +1814,23 @@ transition: 1s ease;
 	filter: grayscale(0);
 }
 .about-us .meet-our-team .teams {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    
     margin: 0 auto;
+ 
     width: 270px;
     height: 210px;
-    background-color: #7d112860;
+    background-color: #7d112811;
 }
 .about-us .meet-our-team .team-img-bg img{
-    width: 300px;
-    height: auto;
+    /* width: 300px;
+    height: auto; */
+    height: 350px;
+    width: auto;
+    margin-top: -140px;
+    margin-left: -25px;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+   
 }
 .about-us .meet-our-team .teams p{
     margin-top: -5px;
